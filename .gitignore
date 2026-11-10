@@ -1,5 +1,7 @@
 node_modules/
 build/
+# PDF.js stores its bundled runtime under build/.
+!/outputs/Cyberpath/public/vendor/pdfjs/build/
 work/
 *.log
 __pycache__/
