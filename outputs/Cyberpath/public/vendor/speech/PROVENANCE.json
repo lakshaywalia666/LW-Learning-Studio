@@ -1,0 +1,47 @@
+{
+  "runtime": {
+    "name": "vosk-browser",
+    "version": "0.0.8",
+    "url": "https://registry.npmjs.org/vosk-browser/-/vosk-browser-0.0.8.tgz",
+    "npmIntegrity": "sha512-df9MuChirUGKxP/+4k8tBV6hJOic8IRdJXv64+ET0Ue5CddOzLZINiHOWCka765gBzHJWNtQKgaYakS0FXZIJA==",
+    "modifiedSha256": "ba877a8189c3d3ba0b64de477fe4385fdc76743ba44dd01a5d9352ef16b60877",
+    "modifications": [
+      "Replace generated Function constructor wrapper with a static closure under the existing CSP.",
+      "Terminate the model worker immediately on cancel, rather than waiting for queued inference.",
+      "Use Emscripten DYNAMIC_EXECUTION=0-style static invoker and method-caller closures; preserve existing CSP.",
+      "Separate public expanded-model caches per language/version, so loading one pack does not read every installed pack into worker memory."
+    ],
+    "license": "Apache-2.0",
+    "licenseSource": "https://raw.githubusercontent.com/alphacep/vosk-api/master/COPYING",
+    "bindingReference": {
+      "version": "3.1.25",
+      "embind": "https://raw.githubusercontent.com/emscripten-core/emscripten/3.1.25/src/embind/embind.js",
+      "emval": "https://raw.githubusercontent.com/emscripten-core/emscripten/3.1.25/src/embind/emval.js",
+      "license": "https://raw.githubusercontent.com/emscripten-core/emscripten/3.1.25/LICENSE"
+    }
+  },
+  "models": [
+    {
+      "language": "en",
+      "name": "vosk-model-small-en-us-0.15",
+      "url": "https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip",
+      "sourceSha256": "30f26242c4eb449f948e42cb302dd7a686cb29a3423a8367f99ff41780942498",
+      "sourceBytes": 41205931,
+      "bundledSha256": "58548fc8f004df0329872c289c67ce670042a86bfb5c86fc8c3afbab625bdd4a",
+      "bundledBytes": 41160778,
+      "license": "Apache-2.0"
+    },
+    {
+      "language": "hi",
+      "name": "vosk-model-small-hi-0.22",
+      "url": "https://alphacephei.com/vosk/models/vosk-model-small-hi-0.22.zip",
+      "sourceSha256": "7c50a10866889f0ac21d912c20537a055a597ed09fc1d3e5bcd798f9f0017e48",
+      "sourceBytes": 44458845,
+      "bundledSha256": "9b9a315c85e42d239ab3f15128aad904eda32166bef69490290b677471ef450f",
+      "bundledBytes": 44429833,
+      "license": "Apache-2.0"
+    }
+  ],
+  "modelReference": "https://alphacephei.com/vosk/models",
+  "privateAudio": "Never uploaded; model workers receive audio only after an explicit local action."
+}

@@ -1,0 +1,6 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {readFile,mkdtemp,rm} from 'node:fs/promises';import {spawnSync} from 'node:child_process';import {tmpdir} from 'node:os';import path from 'node:path';import {fileURLToPath} from 'node:url';
+let toolchain;try{toolchain=JSON.parse(await readFile(new URL('../../../work/android-release/tools.json',import.meta.url),'utf8'));}catch{}
+test('native app-lock session cannot unlock through cancelled, expired or stale authentication',{skip:!toolchain},async()=>{
+ const output=await mkdtemp(path.join(tmpdir(),'lw-app-lock-test-'));
+ try{const model=fileURLToPath(new URL('../android/src/com/cyberpath/learning/AppLockState.java',import.meta.url)),harness=fileURLToPath(new URL('./java/AppLockStateTest.java',import.meta.url));const compiled=spawnSync(toolchain.javac,['-encoding','UTF-8','-d',output,model,harness],{encoding:'utf8'});assert.equal(compiled.status,0,compiled.stderr);const result=spawnSync(toolchain.java,['-cp',output,'com.cyberpath.learning.AppLockStateTest'],{encoding:'utf8'});assert.equal(result.status,0,result.stderr);assert.match(result.stdout,/pass/);}finally{const resolved=path.resolve(output);assert.equal(path.dirname(resolved),path.resolve(tmpdir()));assert(path.basename(resolved).startsWith('lw-app-lock-test-'));await rm(resolved,{recursive:true,force:true});}
+});

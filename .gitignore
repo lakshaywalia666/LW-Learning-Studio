@@ -1,0 +1,27 @@
+node_modules/
+build/
+work/
+*.log
+__pycache__/
+*.pyc
+
+# Local credentials, signing material, and app data
+.env
+.env.*
+*.keystore
+*.jks
+*.p12
+*.pfx
+*.pem
+*.key
+/outputs/Cyberpath/android/signing/
+/user-data/
+LW-full-backup-*.json
+studio-workspace.json
+
+# Build artifacts
+*.apk
+*.apk.*
+*.aab
+*.idsig
+*.class

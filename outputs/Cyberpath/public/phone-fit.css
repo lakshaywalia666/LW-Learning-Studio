@@ -1,0 +1,39 @@
+/* Final phone typography and wrapping. Reading-size preferences still own lesson text. */
+@media(max-width:600px) {
+ .toasts {left:16px;right:16px;width:auto;max-width:none;transform:none;align-items:center}
+ .toast {min-width:0;max-width:100%;font-size:14px;line-height:1.5;overflow-wrap:anywhere}
+ .toast button {font-size:14px;min-height:44px;flex-shrink:0}
+ #modal .form-actions {position:sticky;bottom:0;z-index:5;margin-bottom:0;padding:12px 0 max(12px,env(safe-area-inset-bottom));background:var(--app-paper);box-shadow:0 -12px 18px var(--app-paper)}
+ body[data-page=work] .toasts {bottom:calc(164px + env(safe-area-inset-bottom,0px))}
+ #main p,#modal p {font-size:14px;line-height:1.65;overflow-wrap:anywhere}
+ #main small,#modal small,#main .text-small,#main .quiet-note {font-size:12px;line-height:1.55}
+ #main .page-heading h1 {font-size:clamp(28px,8vw,36px);line-height:1.18;letter-spacing:-.8px}
+ #main h2,#modal h2 {line-height:1.3;overflow-wrap:anywhere}
+ #main h3,#modal h3 {line-height:1.4;overflow-wrap:anywhere}
+ #main .button,#modal .button,#main .text-button,#modal .text-button {font-size:14px;line-height:1.4;white-space:normal;overflow-wrap:anywhere}
+ #main .page-heading>div,#main .card-header>div,#main .setting-row>div {min-width:0}
+ #main .field>label,#main .organizer-field,#main .lx-field,#modal .field>label,#modal .organizer-field,#modal .lx-field {font-size:14px;line-height:1.5}
+ #main input:not([type=checkbox]):not([type=radio]):not([type=range]),#main textarea,#main select,#modal input:not([type=checkbox]):not([type=radio]):not([type=range]),#modal textarea,#modal select {min-width:0;max-width:100%;font-size:16px;line-height:1.5}
+ #main .home-kicker,#main .home-date,#main .focus-position,#main .focus-progress {font-size:12px;line-height:1.5;overflow-wrap:anywhere}
+ #main .home-hero-content p {font-size:14px}
+ #main .home-goal-value>p,#main .home-goal-value>a {font-size:12px;line-height:1.5}
+ #main .forest-kicker {font-size:9px;line-height:1.5;letter-spacing:1px}
+ #main .living-course-pin {min-width:110px;max-width:min(180px,calc(100vw - 32px));padding:10px 12px}
+ #main .living-course-pin strong {font-size:12px;line-height:1.4;overflow-wrap:anywhere}
+ #main .living-course-pin span {font-size:11px;line-height:1.5}
+ #main .living-weather-chip strong {font-size:12px;line-height:1.4;white-space:normal}
+ #main .living-weather-chip small {font-size:11px;line-height:1.45;white-space:normal}
+ #main .living-course-menu>summary {font-size:12px;line-height:1.45}
+ #main .living-secondary>.button,#main .living-secondary>.forest-rewards>summary {font-size:12px;line-height:1.45;min-height:44px}
+ #main .living-status>p {font-size:12px;line-height:1.5}
+ #main .living-summary {font-size:13px;line-height:1.5}
+ html[lang=hi] body {letter-spacing:normal}
+ html[lang=hi] :is(button,label,summary,h1,h2,h3) {line-height:1.5;letter-spacing:normal}
+}
+.bulk-task-preview {max-height:min(45dvh,420px);overflow:auto;padding:0 0 0 24px;margin:20px 0;overscroll-behavior:contain}
+.bulk-task-preview li {padding:10px 8px;overflow-wrap:anywhere}
+.bulk-task-preview li+li {border-top:1px solid var(--line,rgba(128,128,128,.2))}
+.bulk-task-preview p {white-space:pre-wrap;margin:4px 0 0}
+.simple-course-builder .builder-topics>button {min-width:0;overflow-wrap:anywhere;white-space:normal;text-align:left}
+.simple-course-builder .builder-topics>button>span {min-width:0;overflow-wrap:anywhere}
+.simple-course-builder .builder-editor .lx-field {min-width:0}

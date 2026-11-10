@@ -1,0 +1,13 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/widget_root" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="18dp" android:background="@drawable/widget_background">
+ <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+  <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="LW  LEARNING STUDIO" android:textColor="#AFC5B7" android:textSize="10sp" android:letterSpacing="0.13"/>
+  <TextView android:id="@+id/widget_cycle" android:layout_width="44dp" android:layout_height="40dp" android:gravity="center" android:text="↻" android:textColor="#D5E9DC" android:textSize="24sp" android:contentDescription="Show next course"/>
+ </LinearLayout>
+ <TextView android:id="@+id/widget_course" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Your course" android:textColor="#B8E6AD" android:textSize="13sp" android:maxLines="1" android:ellipsize="end"/>
+ <TextView android:id="@+id/widget_topic" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_marginTop="6dp" android:gravity="center_vertical" android:text="Your next learning topic" android:textColor="#F1F6F1" android:textSize="18sp" android:maxLines="3" android:ellipsize="end"/>
+ <ProgressBar android:id="@+id/widget_progress" style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="5dp" android:progressTint="#B8E6AD" android:progressBackgroundTint="#34473E" android:max="100"/>
+ <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:orientation="horizontal" android:gravity="center_vertical">
+  <TextView android:id="@+id/widget_progress_text" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="0% · 0 tasks today" android:textColor="#AFC5B7" android:textSize="10sp"/>
+  <TextView android:id="@+id/widget_continue" android:layout_width="wrap_content" android:layout_height="40dp" android:paddingLeft="15dp" android:paddingRight="15dp" android:gravity="center" android:background="@drawable/widget_button" android:text="Continue →" android:textColor="#17291C" android:textSize="11sp" android:contentDescription="Continue studying in Work"/>
+ </LinearLayout>
+</LinearLayout>

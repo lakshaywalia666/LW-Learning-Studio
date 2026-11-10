@@ -1,0 +1,39 @@
+{
+  "purpose": "Fully local English/Hindi OCR; no runtime CDN or hosted recognition",
+  "packages": [
+    {
+      "name": "tesseract.js",
+      "version": "6.0.1",
+      "url": "https://registry.npmjs.org/tesseract.js/-/tesseract.js-6.0.1.tgz",
+      "integrity": "sha512-/sPvMvrCtgxnNRCjbTYbr7BRu0yfWDsMZQ2a/T5aN/L1t8wUQN6tTWv6p6FwzpoEBA0jrN2UD2SX4QQFRdoDbA==",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "tesseract.js-core",
+      "version": "6.1.2",
+      "url": "https://registry.npmjs.org/tesseract.js-core/-/tesseract.js-core-6.1.2.tgz",
+      "integrity": "sha512-pv4GjmramjdObhDyR1q85Td8X60Puu/lGQn7Kw2id05LLgHhAcWgnz6xSdMCSxBMWjQDmMyDXPTC2aqADdpiow==",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "@tesseract.js-data/eng",
+      "version": "1.0.0",
+      "url": "https://registry.npmjs.org/@tesseract.js-data/eng/-/eng-1.0.0.tgz",
+      "integrity": "sha512-mbTumm6KQPUHyzTPQaF3ObXYnx0SqqfV2nabqFVQBwD6Kl7PhGSLSzOlfFTWy0P3BjghaSKA2W9GB19Jk+ZcTg==",
+      "license": "MIT"
+    },
+    {
+      "name": "@tesseract.js-data/hin",
+      "version": "1.0.0",
+      "url": "https://registry.npmjs.org/@tesseract.js-data/hin/-/hin-1.0.0.tgz",
+      "integrity": "sha512-MB6WY6g4SAtrs+Xuyz5JDDsLFCykCwIESV7M9KkyxF71bxBqhLa8e7GJi5yGa/Wl6V4nuC7LWX/EMdSyTINTvg==",
+      "license": "MIT"
+    }
+  ],
+  "docs": "https://github.com/naptha/tesseract.js/blob/master/docs/local-installation.md",
+  "trainedDataLicense": {
+    "upstream": "Apache-2.0",
+    "url": "https://raw.githubusercontent.com/naptha/tessdata/gh-pages/LICENSE",
+    "note": "The npm wrappers declare MIT. Upstream language data license is retained alongside the package provenance."
+  }
+}

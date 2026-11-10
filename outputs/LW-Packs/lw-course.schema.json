@@ -1,0 +1,772 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:lw:course:2",
+  "title": "LW Learning Studio course v2",
+  "description": "A declarative course with ordered topics, tasks, and checkbox items. Contains no learner completion state.",
+  "type": "object",
+  "required": [
+    "format",
+    "version",
+    "kind",
+    "data"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "format": {
+      "const": "lw-learning-studio"
+    },
+    "version": {
+      "const": 2
+    },
+    "kind": {
+      "const": "course"
+    },
+    "exportedAt": {
+      "type": "string"
+    },
+    "study": {
+      "type": "object",
+      "properties": {
+        "dailyMinutes": {
+          "type": "integer",
+          "minimum": 15,
+          "maximum": 600
+        },
+        "weeklyHours": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 100
+        }
+      },
+      "additionalProperties": false
+    },
+    "data": {
+      "$ref": "#/$defs/course"
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]{1,100}$"
+    },
+    "ids": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/id"
+      },
+      "uniqueItems": true,
+      "maxItems": 100
+    },
+    "check": {
+      "type": "object",
+      "required": [
+        "id",
+        "title"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "required": {
+          "type": "boolean",
+          "default": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "task": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "kind",
+        "minutes",
+        "instructions",
+        "checklist"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "kind": {
+          "enum": [
+            "Study",
+            "Lab",
+            "Build",
+            "Review",
+            "Assessment",
+            "Research",
+            "Report",
+            "Teaching"
+          ]
+        },
+        "minutes": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 1440
+        },
+        "instructions": {
+          "type": "string",
+          "maxLength": 20000
+        },
+        "checklist": {
+          "type": "array",
+          "maxItems": 100,
+          "items": {
+            "$ref": "#/$defs/check"
+          }
+        },
+        "resources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true,
+          "maxItems": 100
+        },
+        "tools": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true,
+          "maxItems": 100
+        },
+        "projectId": {
+          "anyOf": [
+            {
+              "const": ""
+            },
+            {
+              "$ref": "#/$defs/id"
+            }
+          ]
+        },
+        "required": {
+          "type": "boolean",
+          "default": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "topic": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "stage",
+        "hours",
+        "tasks"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "stage": {
+          "$ref": "#/$defs/id"
+        },
+        "domain": {
+          "type": "string"
+        },
+        "domainName": {
+          "type": "string"
+        },
+        "route": {
+          "type": "string",
+          "default": "Core"
+        },
+        "hours": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "scope": {
+          "type": "string"
+        },
+        "practice": {
+          "type": "string"
+        },
+        "evidenceRequired": {
+          "type": "string"
+        },
+        "prerequisites": {
+          "type": "string"
+        },
+        "resources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true,
+          "maxItems": 100
+        },
+        "projects": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true,
+          "maxItems": 100
+        },
+        "tools": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true,
+          "maxItems": 100
+        },
+        "tasks": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 200,
+          "items": {
+            "$ref": "#/$defs/task"
+          }
+        },
+        "initial": {
+          "type": "object",
+          "properties": {
+            "included": {
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": false
+        },
+        "requires": {
+          "$ref": "#/$defs/ids"
+        },
+        "lessonMedia": {
+          "type": "array",
+          "maxItems": 8,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "kind",
+              "name",
+              "dataURL"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9_-]{1,100}$"
+              },
+              "kind": {
+                "enum": [
+                  "image",
+                  "audio",
+                  "pdf"
+                ]
+              },
+              "name": {
+                "type": "string",
+                "maxLength": 240
+              },
+              "dataURL": {
+                "type": "string",
+                "maxLength": 8000000,
+                "pattern": "^data:(image/(png|jpeg|webp|gif)|audio/[A-Za-z0-9.+-]+|application/pdf);base64,"
+              }
+            }
+          }
+        },
+        "recall": {
+          "type": "object",
+          "required": [
+            "question",
+            "answer"
+          ],
+          "properties": {
+            "question": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2000
+            },
+            "answer": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 4000
+            }
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "stage": {
+      "type": "object",
+      "required": [
+        "id",
+        "title"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "level": {
+          "type": "string"
+        },
+        "exit": {
+          "type": "string"
+        },
+        "prerequisites": {
+          "type": "string"
+        },
+        "projects": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true,
+          "maxItems": 100
+        },
+        "requires": {
+          "$ref": "#/$defs/ids"
+        }
+      },
+      "additionalProperties": true
+    },
+    "entry": {
+      "type": "object",
+      "required": [
+        "id",
+        "title"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": true
+    },
+    "course": {
+      "type": "object",
+      "required": [
+        "meta",
+        "stages",
+        "topics"
+      ],
+      "properties": {
+        "meta": {
+          "type": "object",
+          "required": [
+            "course"
+          ],
+          "properties": {
+            "version": {
+              "type": "string"
+            },
+            "course": {
+              "type": "object",
+              "required": [
+                "id",
+                "title",
+                "color"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9_-]{1,70}$"
+                },
+                "title": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "description": {
+                  "type": "string"
+                },
+                "color": {
+                  "type": "string",
+                  "pattern": "^#[A-Fa-f0-9]{6}$"
+                },
+                "icon": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": true
+            }
+          },
+          "additionalProperties": true
+        },
+        "taskSchemaVersion": {
+          "const": 2
+        },
+        "stages": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 100,
+          "items": {
+            "$ref": "#/$defs/stage"
+          }
+        },
+        "topics": {
+          "type": "array",
+          "maxItems": 10000,
+          "items": {
+            "$ref": "#/$defs/topic"
+          }
+        },
+        "projects": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/project"
+          }
+        },
+        "resources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/resource"
+          }
+        },
+        "tools": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/tool"
+          }
+        },
+        "labs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/lab"
+          }
+        },
+        "careers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/career"
+          }
+        },
+        "weekly": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "week"
+            ],
+            "properties": {
+              "week": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "topics": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/id"
+                },
+                "uniqueItems": true,
+                "maxItems": 100
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "glossary": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "term",
+              "definition"
+            ],
+            "properties": {
+              "term": {
+                "type": "string"
+              },
+              "definition": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "guide": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "title",
+              "body"
+            ],
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "body": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "exercises": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/exercise"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "project": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "stage"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "stage": {
+          "$ref": "#/$defs/id"
+        },
+        "task": {
+          "type": "string"
+        },
+        "hours": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "domains": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "toolsText": {
+          "type": "string"
+        },
+        "evidenceRequired": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "resource": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "url"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "publisher": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "level": {
+          "type": "string"
+        },
+        "use": {
+          "type": "string"
+        },
+        "access": {
+          "type": "string"
+        },
+        "checkedDate": {
+          "type": "string"
+        },
+        "linkCheck": {
+          "type": "string"
+        },
+        "researchDepth": {
+          "type": "string"
+        },
+        "refreshDate": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string",
+          "pattern": "^https?://"
+        }
+      },
+      "additionalProperties": true
+    },
+    "tool": {
+      "type": "object",
+      "required": [
+        "id",
+        "title"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "domain": {
+          "type": "string"
+        },
+        "resource": {
+          "type": "string"
+        },
+        "task": {
+          "type": "string"
+        },
+        "evidenceRequired": {
+          "type": "string"
+        },
+        "limits": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "lab": {
+      "type": "object",
+      "required": [
+        "id",
+        "title"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "purpose": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "isolation": {
+          "type": "string"
+        },
+        "recovery": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "career": {
+      "type": "object",
+      "required": [
+        "id",
+        "title"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "work": {
+          "type": "string"
+        },
+        "depth": {
+          "type": "string"
+        },
+        "sequence": {
+          "type": "string"
+        },
+        "projects": {
+          "$ref": "#/$defs/ids"
+        },
+        "domains": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "exercise": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "type",
+        "prompt"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "type": {
+          "enum": [
+            "quiz",
+            "scenario",
+            "rubric",
+            "speaking"
+          ]
+        },
+        "topicId": {
+          "type": "string"
+        },
+        "prompt": {
+          "type": "string"
+        },
+        "options": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 2,
+          "maxItems": 20
+        },
+        "correct": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "rubric": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

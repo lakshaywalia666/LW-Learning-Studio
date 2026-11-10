@@ -1,0 +1,66 @@
+{
+  "id": "./",
+  "name": "LW Learning Studio",
+  "short_name": "LW Studio",
+  "description": "Your learning studio with daily work, independent course tracking, and a growing forest.",
+  "start_url": "./#/dashboard",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#090b10",
+  "theme_color": "#090b10",
+  "orientation": "any",
+  "lang": "en",
+  "categories": [
+    "education",
+    "productivity"
+  ],
+  "icons": [
+    {
+      "src": "icons/lw-logo.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/lw-app.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Today's plan",
+      "url": "./#/today",
+      "icons": [
+        {
+          "src": "icons/lw-app.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Log a session",
+      "url": "./#/sessions",
+      "icons": [
+        {
+          "src": "icons/lw-app.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Your progress",
+      "url": "./#/analytics",
+      "icons": [
+        {
+          "src": "icons/lw-app.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ]
+}

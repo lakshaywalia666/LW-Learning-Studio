@@ -1,0 +1,13 @@
+{
+  "name": "lw-learning-studio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node outputs/Cyberpath/server.mjs",
+    "test": "node tools/run_tests.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

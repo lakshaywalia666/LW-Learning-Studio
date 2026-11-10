@@ -1,0 +1,217 @@
+{
+  "format": "lw-learning-studio",
+  "version": 2,
+  "kind": "course",
+  "exportedAt": "2026-10-30T15:51:33.065Z",
+  "study": {
+    "dailyMinutes": 30,
+    "weeklyHours": 3
+  },
+  "data": {
+    "meta": {
+      "version": "1.0.0",
+      "course": {
+        "id": "lw-checklist-demo",
+        "title": "LW checklist demo",
+        "description": "A small ready-to-use example of a complete LW v2 course.",
+        "color": "#b8e6ad",
+        "icon": "book"
+      }
+    },
+    "stages": [
+      {
+        "id": "ST01",
+        "title": "Start here",
+        "level": "Foundation",
+        "exit": "Demonstrate the selected topics, preserve evidence, and review your work.",
+        "projects": [
+          "PROJECT-01"
+        ],
+        "prerequisites": "None",
+        "evidence": "",
+        "reviewedDate": ""
+      },
+      {
+        "id": "ST02",
+        "title": "Build your routine",
+        "level": "Practice",
+        "exit": "Demonstrate the selected topics, preserve evidence, and review your work.",
+        "projects": [],
+        "prerequisites": "ST01",
+        "evidence": "",
+        "reviewedDate": "",
+        "requires": [
+          "ST01"
+        ]
+      }
+    ],
+    "topics": [
+      {
+        "id": "START-001",
+        "title": "Set your learning direction",
+        "stage": "ST01",
+        "domain": "START",
+        "domainName": "Learning workflow",
+        "route": "Core",
+        "hours": 1,
+        "scope": "Choose a concrete learning outcome and a repeatable practice routine.",
+        "practice": "Write one outcome you can demonstrate.",
+        "evidenceRequired": "A short note describing your outcome and how you will test it.",
+        "prerequisites": "None",
+        "resources": [],
+        "projects": [
+          "PROJECT-01"
+        ],
+        "tools": [],
+        "tasks": [
+          {
+            "id": "choose-goal",
+            "title": "Choose your learning goal",
+            "kind": "Study",
+            "minutes": 10,
+            "instructions": "Choose one skill you want to learn. Make the goal concrete enough that another person could check the result.",
+            "checklist": [
+              {
+                "id": "pick-skill",
+                "title": "Write down one skill to learn",
+                "required": true
+              },
+              {
+                "id": "define-result",
+                "title": "Describe a result that proves I can use it",
+                "required": true
+              },
+              {
+                "id": "share",
+                "title": "Explain the goal aloud",
+                "required": false
+              }
+            ],
+            "resources": [],
+            "tools": [],
+            "projectId": "PROJECT-01",
+            "required": true
+          },
+          {
+            "id": "plan-session",
+            "title": "Plan your first practice session",
+            "kind": "Build",
+            "minutes": 15,
+            "instructions": "Choose a small exercise and set aside a realistic block of time. Keep the exercise small enough to finish.",
+            "checklist": [
+              {
+                "id": "choose-exercise",
+                "title": "Choose a concrete practice exercise"
+              },
+              {
+                "id": "choose-time",
+                "title": "Choose when I will work on it"
+              }
+            ],
+            "resources": [],
+            "tools": [],
+            "projectId": "PROJECT-01",
+            "required": true
+          },
+          {
+            "id": "stretch",
+            "title": "Optional: write a stretch goal",
+            "kind": "Research",
+            "minutes": 5,
+            "instructions": "Write one optional challenge for a day when you have extra time.",
+            "checklist": [
+              {
+                "id": "stretch-note",
+                "title": "Write an extra challenge"
+              }
+            ],
+            "resources": [],
+            "tools": [],
+            "projectId": "",
+            "required": false
+          }
+        ],
+        "initial": {
+          "included": true
+        }
+      },
+      {
+        "id": "START-002",
+        "title": "Reflect and prepare the next session",
+        "stage": "ST02",
+        "domain": "START",
+        "domainName": "Learning workflow",
+        "route": "Core",
+        "hours": 0.5,
+        "scope": "Turn a completed exercise into a useful record.",
+        "practice": "Record the outcome and choose your next action.",
+        "evidenceRequired": "A learning note and next action.",
+        "prerequisites": "START-001",
+        "resources": [],
+        "projects": [
+          "PROJECT-01"
+        ],
+        "tools": [],
+        "tasks": [
+          {
+            "id": "reflect",
+            "title": "Record your outcome",
+            "kind": "Review",
+            "minutes": 10,
+            "instructions": "After practice, write what happened, what you learned, and one next action. Log the actual time separately in the app.",
+            "checklist": [
+              {
+                "id": "outcome",
+                "title": "Write what I learned"
+              },
+              {
+                "id": "next-action",
+                "title": "Choose one action for next time"
+              }
+            ],
+            "resources": [],
+            "tools": [],
+            "projectId": "PROJECT-01",
+            "required": true
+          }
+        ],
+        "initial": {
+          "included": true
+        },
+        "requires": [
+          "START-001"
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "id": "PROJECT-01",
+        "stage": "ST01",
+        "title": "Build a personal learning routine",
+        "task": "Create a repeatable study and practice routine with a measurable goal and a reflection note.",
+        "hours": 1,
+        "domains": [
+          "START"
+        ],
+        "toolsText": "Your notes and this learning app.",
+        "evidenceRequired": "A goal, a practice plan, an outcome note, and a next action."
+      }
+    ],
+    "resources": [],
+    "tools": [],
+    "labs": [],
+    "weekly": [],
+    "careers": [],
+    "glossary": [],
+    "guide": [
+      {
+        "title": "How the checkboxes work",
+        "body": "Read the supplied Learn this content and Your tasks instructions in Work. After studying and doing the work, tap Done to complete the topic\u2019s remaining required tasks/checks and open the next topic. You can also tick individual checkboxes in Work or Today. Optional tasks are available in the topic checklist. No written reflection is needed to move on."
+      }
+    ],
+    "taskSchemaVersion": 2,
+    "initialSessions": [],
+    "initialNotes": []
+  },
+  "$schema": "./lw-course.schema.json"
+}

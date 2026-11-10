@@ -1,0 +1,4 @@
+import fs from 'node:fs/promises';import path from 'node:path';import {fileURLToPath} from 'node:url';
+const root=fileURLToPath(new URL('../outputs/Cyberpath/public/',import.meta.url));
+async function files(dir){const out=[];for(const item of await fs.readdir(dir,{withFileTypes:true})){const file=path.join(dir,item.name);if(item.isDirectory())out.push(...await files(file));else if(item.name!=='sw.js')out.push('./'+path.relative(root,file).split(path.sep).map(encodeURIComponent).join('/'));}return out;}
+const shell=['./',...(await files(root)).sort()],file=path.join(root,'sw.js'),source=await fs.readFile(file,'utf8');if(!/const SHELL=\[[\s\S]*?\];/.test(source))throw new Error('Offline shell declaration is unavailable.');await fs.writeFile(file,source.replace(/const SHELL=\[[\s\S]*?\];/,`const SHELL=${JSON.stringify(shell)};`));console.log('Offline shell: '+shell.length+' public paths.');

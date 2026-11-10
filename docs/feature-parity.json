@@ -1,0 +1,488 @@
+{
+  "application": "LW Learning Studio",
+  "decision": "Flutter + Dart UI; Kotlin Android services",
+  "migration_started": false,
+  "routes": [
+    {
+      "route": "climb",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "device",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "knowledge",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "work",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "forest",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true,
+      "required_behaviors": [
+        "Five selectable illustrated worlds: forest, islands, city, constellations, orbs",
+        "Shared canonical completion and independent course progress",
+        "Saved scene, separate cameras, world animation play/pause",
+        "Animated topic hit targets, course inspector and linked stairs/knowledge",
+        "Clock lighting, opt-in weather, reduced motion and lifecycle pause"
+      ]
+    },
+    {
+      "route": "appearance",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "dashboard",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true,
+      "required_behaviors": [
+        "Simple Home with local-time greeting and editable profile name",
+        "Continue next unfinished topic, course list, add course, notes, worlds and today links",
+        "Primary navigation: Home, Study, Notes, Worlds; secondary tools under More"
+      ]
+    },
+    {
+      "route": "today",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "path",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "topics",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "projects",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "planner",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "sessions",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "resources",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "tools",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "labs",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "notes",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "careers",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "glossary",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "analytics",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "growth",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "guide",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "settings",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "notebook",
+      "current_source": "learning-ui",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "day",
+      "current_source": "learning-ui",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "reviews",
+      "current_source": "learning-ui",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "builder",
+      "current_source": "learning-ui",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "library",
+      "current_source": "learning-ui",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "reader",
+      "current_source": "learning-ui",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "exercises",
+      "current_source": "learning-ui",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "helper",
+      "current_source": "learning-ui",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "forest-history",
+      "current_source": "learning-ui",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "history",
+      "current_source": "learning-ui",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "learning-insights",
+      "current_source": "learning-ui",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "polish",
+      "current_source": "learning-ui",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "search",
+      "current_source": "learning-ui",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "welcome",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true,
+      "required_behaviors": [
+        "Offline name entry, greeting from device local time, and course selection/import",
+        "Resume partial setup after restart; preserve old workspaces and their records"
+      ]
+    },
+    {
+      "route": "courses",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true,
+      "required_behaviors": [
+        "Add built-in, imported .lw, or authored courses",
+        "Separate enrollment without deleting installed content or progress"
+      ]
+    },
+    {
+      "route": "course-overview",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true,
+      "required_behaviors": [
+        "Existing detailed course metrics, daily table and forest overview"
+      ]
+    },
+    {
+      "route": "reminders",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "design",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "inbox",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "agenda",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "cards",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "schedule",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "quizzes",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "focus",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "habits",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "personalize",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "tour",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "collections",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "boards",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "world-studio",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "data-safety",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "listening",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "documents",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "route": "voice",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true,
+      "required_behaviors": [
+        "Bundled offline English/Hindi speech, review before note/reminder/navigation, Stop and profile guards"
+      ]
+    },
+    {
+      "route": "receive",
+      "current_source": "app",
+      "flutter_status": "pending",
+      "required_for_replacement": true,
+      "required_behaviors": [
+        "Reviewed Android shared text/media and direct .lw content intake; signature/update preview before import"
+      ]
+    }
+  ],
+  "native_capabilities": [
+    {
+      "id": "notifications-reminders",
+      "status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "id": "home-screen-widget",
+      "status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "id": "widget-notification-course-launch",
+      "status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "id": "folder-backups-and-history",
+      "status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "id": "full-backup-restore-with-assets",
+      "status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "id": "native-file-import-export",
+      "status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "id": "photo-audio-document-attachments",
+      "status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "id": "completion-sound-and-haptics",
+      "status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "id": "custom-sound-and-theme-imports",
+      "status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "id": "foreground-approximate-weather-location",
+      "status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "id": "weather-off-and-offline-fallback",
+      "status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "id": "lifecycle-pause-and-timer-resume",
+      "status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "id": "android-back-and-deep-links",
+      "status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "id": "display-rate-and-reduced-motion",
+      "status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "id": "process-recreation-and-crash-recovery",
+      "status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "id": "lw-course-update-with-progress",
+      "status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "id": "workspace-asset-activity-history-migration",
+      "status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "id": "release-signing-and-device-verification",
+      "status": "pending",
+      "required_for_replacement": true
+    },
+    {
+      "id": "native-reviewed-share-intake",
+      "status": "pending",
+      "required_for_replacement": true,
+      "current_source_status": "Unreleased Java implementation; device verification pending"
+    },
+    {
+      "id": "os-credential-app-lock",
+      "status": "pending",
+      "required_for_replacement": true,
+      "current_source_status": "Unreleased Java implementation; device verification pending"
+    }
+  ]
+}

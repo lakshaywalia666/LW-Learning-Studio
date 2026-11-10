@@ -1,0 +1,18 @@
+.assessment-screen .capture-tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:22px}
+.assessment-screen h2,.assessment-screen h3{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.5}
+.assessment-screen .capture-stack{margin-top:18px}.assessment-score{margin-bottom:22px;background:var(--app-inset)}
+.assessment-score h2{font-size:clamp(38px,7vw,60px);letter-spacing:-2px;margin:10px 0}.assessment-score>small{font-size:14px}
+.assessment-explanation{padding:18px;background:var(--app-inset);border-radius:16px;white-space:pre-wrap;overflow-wrap:anywhere;font-size:var(--reading-size,16px);line-height:var(--reading-leading,1.7);letter-spacing:var(--reading-tracking,0em);margin:16px 0}
+.assessment-run{max-width:720px;margin:20px auto}.assessment-run h2{font-size:clamp(22px,4vw,30px);margin-top:24px}
+.assessment-timer{font-variant-numeric:tabular-nums;font-weight:600;color:var(--accent);border:1px solid var(--app-line);border-radius:999px;padding:8px 14px}
+.assessment-options{display:grid;gap:12px;border:0;padding:0;margin:24px 0;min-width:0}.assessment-options legend{font-size:13px;color:var(--muted);padding-bottom:14px}
+.assessment-options label{display:flex;align-items:flex-start;gap:12px;padding:18px;border:1px solid var(--app-line);border-radius:18px;min-height:56px;cursor:pointer}
+.assessment-options label:has(input:checked){border-color:var(--accent);background:var(--app-inset)}.assessment-options input{flex-shrink:0;margin-top:4px}.assessment-options span{white-space:pre-wrap;overflow-wrap:anywhere;min-width:0;line-height:1.6}
+.assessment-step-actions{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin:24px 0}
+[data-assessment-form="question"] [hidden]{display:none!important}
+
+@media(max-width:420px){.assessment-screen .capture-tabs .button{padding-inline:12px}.assessment-run{padding:20px}.assessment-options label{padding:15px}}
+
+@media(max-width:1000px){body[data-page=quizzes] .topbar{display:none}body[data-page=quizzes] #main{padding-top:calc(29px + env(safe-area-inset-top,0px))}}
+
+.assessment-screen .capture-panel h3,.assessment-options span,.assessment-run textarea,.assessment-run input[data-exam-answer]{font-size:var(--reading-size,16px);line-height:var(--reading-leading,1.65);letter-spacing:var(--reading-tracking,0em)}

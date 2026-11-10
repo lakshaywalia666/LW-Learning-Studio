@@ -1,0 +1,55 @@
+/* Optical edges and spring motion are limited to the app's control layer. */
+:root {--app-glass:color-mix(in srgb,var(--panel2) 64%,transparent);--glass-edge:color-mix(in srgb,var(--text) 11%,transparent);--glass-shadow:inset 0 1px 1px #ffffff4a,inset 0 -1px 1px #00000008,0 9px 30px #00000012}
+.app-round-button,.home-avatar,.button,.home-shortcuts>a,.home-course-row,.app-menu-link,.app-menu-profile {transition:transform .36s cubic-bezier(.2,1.35,.4,1),background .2s,box-shadow .2s}
+.app-pressed {transform:scale(.965)!important}
+.bottom-nav .bottom-link.app-pressed {transform:scale(.92)!important}
+.home-shortcuts>a.app-pressed,.home-course-row.app-pressed {transform:scale(.98)!important}
+.app-round-button,.home-header-actions .home-avatar {position:relative;isolation:isolate;border-color:var(--glass-edge);box-shadow:var(--glass-shadow);backdrop-filter:blur(20px) saturate(1.6);-webkit-backdrop-filter:blur(20px) saturate(1.6)}
+.app-round-button:after,.home-header-actions .home-avatar:after {content:'';pointer-events:none;position:absolute;inset:0;border-radius:inherit;background:radial-gradient(circle at var(--touch-x,30%) var(--touch-y,10%),#ffffff50,transparent 65%);opacity:.25;transition:opacity .25s}
+.app-round-button.app-pressed:after,.home-header-actions .home-avatar.app-pressed:after {opacity:.8}
+.home-book-art {animation:glass-book-arrive .8s cubic-bezier(.16,1,.3,1) both}
+.book-sheet-front {animation:glass-book-float 7s ease-in-out 1s infinite}
+.book-sheet-front:after {content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:linear-gradient(130deg,#ffffff45,transparent 43%,color-mix(in srgb,var(--accent) 5%,transparent));box-shadow:inset 0 1px 0 #ffffff80}
+.book-spark {animation:glass-spark-arrive .9s cubic-bezier(.16,1,.3,1) both}
+.app-home .home-continue {box-shadow:inset 0 1px 0 #ffffff20,0 7px 26px #00000004}
+.app-home .home-continue:after {content:'';position:absolute;inset:0;border:1px solid #ffffff0c;border-top-color:#ffffff40;border-radius:inherit;pointer-events:none}
+.app-home .home-continue-actions>.button.primary {background:linear-gradient(165deg,color-mix(in srgb,var(--accent) 94%,white),var(--accent));box-shadow:inset 0 1px 0 #ffffff33,0 5px 15px color-mix(in srgb,var(--accent) 18%,transparent)}
+.app-done-button {transition:transform .3s cubic-bezier(.2,1.3,.4,1),background .25s,box-shadow .25s}
+.app-done-button.is-complete {animation:glass-done .55s cubic-bezier(.22,1,.36,1)}
+.app-done-button.is-complete>.icon {stroke-dasharray:34;stroke-dashoffset:0;animation:glass-check .35s ease-out}
+.app-menu-shortcuts .app-menu-link {box-shadow:inset 0 1px 0 #ffffff0b}
+.app-menu-shortcuts .app-menu-link:nth-child(2) .app-menu-icon {color:#b291e2;background:#b291e217}
+.app-menu-shortcuts .app-menu-link:nth-child(3) .app-menu-icon {color:var(--muted);background:color-mix(in srgb,var(--muted) 10%,transparent)}
+.app-menu-shortcuts .app-menu-link:nth-child(4) .app-menu-icon {color:#62a88a;background:#62a88a17}
+#main>.app-home,#main>.course-start,#main>.focused-study {animation:none}
+dialog {animation:none;opacity:0;translate:0 14px;transition:opacity .22s,translate .28s cubic-bezier(.2,.8,.2,1),display .28s allow-discrete,overlay .28s allow-discrete}
+dialog[open] {opacity:1;translate:0 0}
+dialog::backdrop {background:#07112200;backdrop-filter:blur(0);-webkit-backdrop-filter:blur(0);transition:background .25s,backdrop-filter .25s,display .28s allow-discrete,overlay .28s allow-discrete}
+dialog[open]::backdrop {background:#07112244;backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px)}
+@starting-style {dialog[open]{opacity:0;translate:0 22px}dialog[open]::backdrop{background:#07112200;backdrop-filter:blur(0);-webkit-backdrop-filter:blur(0)}}
+@keyframes glass-book-arrive {from{opacity:0;translate:8px 12px}to{opacity:1;translate:0 0}}
+@keyframes glass-spark-arrive {from{opacity:0;scale:.6}to{opacity:1;scale:1}}
+@keyframes glass-book-float {0%,100%{translate:0 0;rotate:0deg}50%{translate:0 -4px;rotate:1.3deg}}
+@keyframes glass-done {0%{scale:1}35%{scale:.97}70%{scale:1.015}100%{scale:1}}
+@keyframes glass-check {from{stroke-dashoffset:34}to{stroke-dashoffset:0}}
+@media(max-width:1000px) {
+ .tabbar-main {position:relative;isolation:isolate;backdrop-filter:blur(28px) saturate(1.65);-webkit-backdrop-filter:blur(28px) saturate(1.65);box-shadow:var(--glass-shadow);border-color:var(--glass-edge)}
+ .tabbar-main:after,.bottom-nav .tabbar-more:after {content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;border:1px solid transparent;border-top-color:#ffffff55;border-left-color:#ffffff17;background:linear-gradient(155deg,#ffffff12,transparent 36%,#ffffff03);z-index:2}
+ .bottom-nav .tabbar-more {position:relative;isolation:isolate;box-shadow:var(--glass-shadow);border-color:var(--glass-edge);backdrop-filter:blur(28px) saturate(1.65);-webkit-backdrop-filter:blur(28px) saturate(1.65)}
+ .bottom-nav .tabbar-main .bottom-link {position:relative;z-index:1}
+ .bottom-nav .tabbar-main .bottom-link.active {background:transparent;box-shadow:none}
+ .glass-tab-indicator {position:absolute;left:0;top:50%;bottom:auto;height:56px;margin-top:-28px;border-radius:999px;background:color-mix(in srgb,var(--accent) 13%,var(--app-paper));border:1px solid color-mix(in srgb,var(--accent) 7%,transparent);box-shadow:inset 0 1px 0 #ffffff55,0 2px 5px #00000002;pointer-events:none;transition:opacity .2s}
+ .bottom-nav .tabbar-more.active {background:color-mix(in srgb,var(--accent) 13%,var(--app-glass))}
+ dialog,dialog.drawer {translate:0 100%;transition:opacity .22s,translate .42s cubic-bezier(.22,1.04,.36,1),display .42s allow-discrete,overlay .42s allow-discrete}
+ dialog[open],dialog.drawer[open] {translate:0 0}
+ @starting-style {dialog[open],dialog.drawer[open]{opacity:0;translate:0 100%}}
+ .dialog-head>.app-round-button {background:color-mix(in srgb,var(--text) 4%,var(--app-paper));box-shadow:inset 0 1px 0 #ffffff20;backdrop-filter:none;-webkit-backdrop-filter:none}
+}
+:root[data-app-background=true] .book-sheet-front {animation-play-state:paused}
+@media(max-width:350px) {.glass-tab-indicator {height:52px;margin-top:-26px}}
+html[data-reading-contrast=high] .tabbar-main:after,html[data-reading-contrast=high] .tabbar-more:after,html[data-reading-contrast=high] .home-continue:after {display:none}
+html[data-reading-contrast=high] .glass-tab-indicator {background:var(--accent-bg);border:1px solid var(--accent);box-shadow:none}
+html[data-performance=high] .tabbar-main,html[data-performance=high] .bottom-nav .tabbar-more,html[data-performance=high] .app-round-button,html[data-performance=high] .home-avatar {backdrop-filter:none;-webkit-backdrop-filter:none;background:var(--app-paper)}
+html[data-motion=reduced] dialog,html[data-motion=reduced] dialog::backdrop {transition:none}
+@media(prefers-reduced-motion:reduce) {dialog,dialog::backdrop {transition:none}}
+@media(prefers-reduced-transparency:reduce) {.tabbar-main,.bottom-nav .tabbar-more,.app-round-button,.home-avatar {backdrop-filter:none;-webkit-backdrop-filter:none;background:var(--app-paper)}}

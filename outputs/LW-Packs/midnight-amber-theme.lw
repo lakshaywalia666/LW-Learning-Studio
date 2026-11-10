@@ -1,0 +1,18 @@
+{
+  "format": "lw-learning-studio",
+  "version": 1,
+  "kind": "theme",
+  "theme": {
+    "id": "midnight-amber",
+    "name": "Midnight Amber",
+    "mode": "dark",
+    "colors": {
+      "background": "#100e0b",
+      "surface": "#2b241d",
+      "text": "#f6eee2",
+      "muted": "#b7aa96",
+      "accent": "#edcb91",
+      "glow": "#bf8b45"
+    }
+  }
+}

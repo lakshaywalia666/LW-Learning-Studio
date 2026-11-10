@@ -1,0 +1,7 @@
+import {allTopics,allResources,allTools,allProjects} from './model.js?v=studio47';
+import {topicTasks,taskState} from './course-tasks.js?v=studio47';
+export function studyBrief(data,state,topic){
+ const tasks=topicTasks(topic).filter(task=>task.required!==false),lookup=(rows,ids)=>[...new Set(ids)].map(id=>rows.find(row=>row.id===id)).filter(Boolean),all=allTopics(data,state),known=new Set(all.map(row=>row.id));
+ const prerequisites=topic.requires??[...new Set((String(topic.prerequisites||'').match(/[A-Za-z0-9_-]+/g)||[]).filter(id=>known.has(id)))];
+ return{tasks,done:tasks.filter(task=>taskState(state,topic.id,task).done).length,minutes:tasks.reduce((n,task)=>n+task.minutes,0),stage:data.stages.find(stage=>stage.id===topic.stage),prerequisites:lookup(all,prerequisites),prerequisiteText:prerequisites.length?'':String(topic.prerequisites||'None'),resources:lookup(allResources(data,state),[...(topic.resources||[]),...tasks.flatMap(task=>task.resources||[])]),tools:lookup(allTools(data,state),[...(topic.tools||[]),...tasks.flatMap(task=>task.tools||[])]),projects:lookup(allProjects(data,state),[...(topic.projects||[]),...tasks.map(task=>task.projectId).filter(Boolean)]),extraPractice:topic.practice&&!tasks.some(task=>task.instructions.trim()===topic.practice.trim())?topic.practice:'',extraEvidence:topic.evidenceRequired&&!tasks.some(task=>task.instructions.trim()===topic.evidenceRequired.trim())?topic.evidenceRequired:''};
+}

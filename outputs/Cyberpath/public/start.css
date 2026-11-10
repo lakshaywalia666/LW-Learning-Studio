@@ -1,0 +1,142 @@
+/* A quiet first run, and four clear everyday destinations. */
+body[data-page=welcome] .sidebar,body[data-page=welcome] .topbar,body[data-page=welcome] .bottom-nav {display:none}
+body[data-page=welcome] .workspace {margin:0;width:100%;min-height:100dvh}
+body[data-page=welcome] #main {padding:0;margin:0;max-width:none;width:100%;min-height:100dvh}
+.welcome-screen {min-height:100dvh;display:flex;flex-direction:column;max-width:1120px;margin:auto;padding:36px 48px 24px;box-sizing:border-box}
+.welcome-brand {display:flex;align-items:center;gap:12px;font-size:12px;font-weight:550;color:var(--muted);letter-spacing:.2px}
+.welcome-brand>span {display:grid;place-items:center;width:39px;height:39px;border-radius:13px;background:var(--accent-bg);border:1px solid var(--ios-line);font-size:13px;font-weight:750;letter-spacing:-.5px;color:var(--accent)}
+.welcome-content {width:100%;max-width:465px;margin:auto;padding:55px 0 45px}
+.welcome-step {display:block;font-size:9px;letter-spacing:1.7px;color:var(--muted);margin-bottom:27px}
+.welcome-glyph {display:grid;place-items:center;width:57px;height:57px;border-radius:20px;background:var(--ios-inset);color:var(--accent);border:1px solid var(--ios-line);box-shadow:0 0 50px color-mix(in srgb,var(--studio-glow) 12%,transparent);margin-bottom:30px}
+.welcome-glyph .icon {width:25px;height:25px}
+.welcome-content h1 {font-size:clamp(33px,4vw,46px);line-height:1.15;letter-spacing:-1.7px;font-weight:680;margin:0}
+.welcome-content>p {font-size:14px;line-height:1.8;color:var(--muted);margin-top:20px}
+.welcome-name-form {display:grid;gap:12px;margin-top:33px}
+.welcome-name-form label {font-size:12px;font-weight:550}
+.welcome-name-form input {width:100%;min-height:55px;padding:14px 16px;font-size:16px;border-radius:16px}
+.welcome-name-form>.button {margin-top:7px;min-height:54px;display:flex;align-items:center;justify-content:center;gap:15px;font-size:14px}
+.welcome-content>.welcome-privacy {font-size:11px;margin-top:18px;line-height:1.7;text-align:center}
+.welcome-restore {display:block;margin:30px auto 0;font-size:11px;min-height:40px;color:var(--muted)}
+.welcome-screen>footer {font-size:10px;line-height:1.8;color:var(--muted);text-align:center}
+.start-page-heading {display:flex;align-items:flex-start;justify-content:space-between;gap:25px;margin-bottom:31px}
+.start-page-heading .eyebrow {display:block;margin-bottom:15px}
+.start-page-heading h1 {font-size:clamp(30px,3.4vw,43px);font-weight:680;line-height:1.2;letter-spacing:-1.4px;overflow-wrap:anywhere}
+.start-page-heading p {font-size:13px;line-height:1.9;color:var(--muted);margin-top:13px;max-width:490px}
+.start-page-heading>.button {flex-shrink:0}
+.course-start {max-width:1000px;margin:auto;padding-bottom:25px}
+.course-start-first {padding:36px 48px 35px;max-width:1040px}
+.course-start-first>.welcome-brand {margin-bottom:58px}
+.course-start-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+.course-start-card {display:flex;flex-direction:column;align-items:flex-start;padding:26px;border:1px solid var(--ios-line);border-radius:24px;background:var(--ios-surface);box-shadow:var(--ios-shadow);min-width:0}
+.start-course-icon {width:44px;height:46px;display:grid;place-items:center;flex-shrink:0;border-radius:15px;background:color-mix(in srgb,var(--course-tint,var(--accent)) 10%,var(--ios-inset));color:var(--course-tint,var(--accent));border:1px solid color-mix(in srgb,var(--course-tint,var(--accent)) 16%,transparent)}
+.start-course-icon .icon {width:22px;height:22px}
+.start-course-label {display:block;font-size:8px;letter-spacing:1.3px;color:var(--muted);margin-top:21px}
+.course-start-card h2 {font-size:24px;letter-spacing:-.8px;font-weight:650;margin-top:6px}
+.course-start-card p {font-size:12px;line-height:1.9;color:var(--muted);margin-top:12px}
+.course-start-card small {display:block;font-size:10px;color:var(--muted);margin:15px 0 24px}
+.course-start-card>.button {align-self:stretch;display:flex;align-items:center;justify-content:space-between;gap:15px;min-height:47px;margin-top:auto}
+.course-bring {margin-top:20px;padding:26px;border:1px solid var(--ios-line);border-radius:24px;background:var(--ios-inset);display:flex;align-items:center;justify-content:space-between;gap:22px}
+.course-bring>div:first-child {max-width:460px}
+.course-bring .start-course-icon {display:none}
+.course-bring h2 {font-size:16px;font-weight:600;letter-spacing:-.3px}
+.course-bring p {font-size:12px;line-height:1.8;color:var(--muted);margin-top:9px}
+.course-bring .button-row {flex-shrink:0;gap:9px}
+.start-simple-note {margin-top:25px;font-size:11px;line-height:1.9;color:var(--muted)}
+.studio-home {max-width:900px;margin:0 auto;padding:7px 0 30px}
+.home-greeting {display:flex;align-items:flex-start;justify-content:space-between;gap:20px;margin-bottom:31px}
+.home-greeting .eyebrow {font-size:10px;letter-spacing:1px;margin-bottom:15px;display:block}
+.home-greeting h1 {font-size:clamp(30px,3.7vw,44px);line-height:1.22;font-weight:680;letter-spacing:-1.55px;overflow-wrap:anywhere}
+.home-greeting p {font-size:13px;color:var(--muted);margin-top:12px;line-height:1.8}
+.home-avatar {width:44px;height:44px;border:1px solid var(--ios-line);border-radius:16px;background:var(--accent-bg);color:var(--accent);font-size:16px;font-weight:650;flex-shrink:0}
+.home-name-note {display:flex;align-items:center;justify-content:space-between;gap:10px;border:1px solid var(--ios-line);border-radius:16px;padding:10px 15px;margin-bottom:20px;color:var(--muted);font-size:12px}
+.home-continue {padding:32px;border:1px solid color-mix(in srgb,var(--accent) 21%,var(--ios-line));border-radius:27px;background:radial-gradient(ellipse at 100% 0%,color-mix(in srgb,var(--accent) 9%,transparent),transparent 65%),var(--ios-surface);box-shadow:var(--ios-shadow)}
+.home-continue-top {display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:23px}
+.home-continue-top .eyebrow {font-size:9px;letter-spacing:1.6px;margin:0}
+.home-course-pill {display:flex;align-items:center;gap:7px;color:var(--course-tint);font-size:11px;font-weight:550}
+.home-course-pill .icon {width:15px;height:15px}
+.home-continue h2 {font-size:clamp(23px,2.5vw,30px);font-weight:630;line-height:1.35;letter-spacing:-.8px;max-width:590px}
+.home-continue>p {font-size:12px;color:var(--muted);line-height:1.8;margin-top:11px}
+.home-course-progress {margin-top:28px}
+.home-course-progress>span {font-size:10px;color:var(--muted)}
+.home-course-progress>.progress-line {height:4px;margin-top:10px}
+.home-continue-actions {display:flex;align-items:center;gap:10px;margin-top:28px;flex-wrap:wrap}
+.home-continue-actions>.button {min-height:47px;display:flex;align-items:center;gap:20px}
+.home-course-section {margin-top:35px}
+.home-section-heading {display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:15px}
+.home-section-heading h2 {font-size:17px;letter-spacing:-.4px;font-weight:600}
+.home-section-heading>.button {padding:8px 0 8px 12px;display:flex;gap:6px;align-items:center;min-height:44px;font-size:12px;border:0;background:none;color:var(--accent)}
+.home-course-list {border:1px solid var(--ios-line);border-radius:21px;background:var(--ios-surface);overflow:hidden}
+.home-course-row {display:flex;align-items:center;gap:15px;border:0;border-radius:0;border-bottom:1px solid var(--ios-line);padding:18px 21px;background:none;color:var(--text);width:100%;text-align:left;min-height:83px}
+.home-course-row:last-child {border:0}
+.home-course-row>span:nth-child(2) {flex:1;min-width:0}
+.home-course-row strong {display:block;font-size:13px;font-weight:600;line-height:1.6}
+.home-course-row small {display:block;font-size:10px;color:var(--muted);margin-top:3px}
+.home-course-row>.icon {width:14px;height:14px;color:var(--muted)}
+.home-course-row:hover {background:var(--ios-inset)}
+.home-shortcuts {display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:20px}
+.home-shortcuts>a {display:flex;align-items:center;gap:10px;padding:18px 20px;border:1px solid var(--ios-line);border-radius:17px;background:var(--ios-surface);min-height:60px;color:var(--text);font-size:12px}
+.home-shortcuts>a>.icon:first-child {color:var(--accent);width:19px;height:19px}
+.home-shortcuts>a>.icon:last-child {margin-left:auto;width:12px;height:12px;color:var(--muted)}
+.home-day-summary {display:flex;align-items:center;gap:8px;color:var(--muted);font-size:11px;margin-top:24px;flex-wrap:wrap;line-height:1.8}
+.home-day-summary>a {margin-left:auto;color:var(--accent)}
+.home-day-summary .icon {width:14px;height:14px}
+.home-how {border-top:1px solid var(--ios-line);margin-top:26px;color:var(--muted);font-size:12px}
+.home-how>summary {display:flex;align-items:center;justify-content:space-between;gap:15px;list-style:none;min-height:59px;cursor:pointer;font-size:11px}
+.home-how ol {padding:0 0 10px 20px;font-size:12px;line-height:1.9}
+.home-how li {padding:7px 0 7px 5px}
+.home-how strong {color:var(--text);font-weight:550}
+.home-how>a {display:flex;align-items:center;gap:8px;min-height:44px;color:var(--accent);font-size:11px}
+.home-how .icon {width:13px;height:13px}
+.nav-extra-tools {margin-top:12px;border-top:1px solid var(--ios-line);padding-top:7px}
+.nav-extra-tools>summary {display:flex;align-items:center;gap:12px;padding:12px 15px;min-height:45px;list-style:none;cursor:pointer;color:var(--muted);font-size:12px}
+.nav-extra-tools>summary>.icon {width:16px;height:16px}
+.nav-extra-tools>summary>.icon:last-child {margin-left:auto;width:12px;height:12px}
+.nav-extra-tools[open]>summary>.icon:last-child {transform:rotate(180deg)}
+.nav-extra-tools .nav-section {border:0;margin-top:4px;padding-top:0}
+body[data-page=dashboard] .topbar .course-picker {display:none}
+.new-course-options {grid-column:1/-1;border-top:1px solid var(--ios-line);padding-top:15px;margin-top:5px}
+.new-course-options>summary {cursor:pointer;color:var(--muted);font-size:12px;min-height:37px}
+.new-course-options>.form-grid {margin-top:15px}
+@media(max-width:760px){
+ .welcome-screen {padding:25px 25px 20px}.welcome-content{padding:40px 0 35px;max-width:430px}.welcome-content h1{font-size:36px;letter-spacing:-1.5px}.welcome-content>p{font-size:13px}.welcome-step{font-size:8px;line-height:1.8}.welcome-glyph{margin-bottom:26px}.welcome-name-form{margin-top:28px}.welcome-name-form input{min-height:54px}.welcome-screen>footer{font-size:9px}
+ .course-start-first{padding:25px 22px 30px}.course-start-first>.welcome-brand{margin-bottom:42px}.start-page-heading{display:block;margin-bottom:25px}.start-page-heading h1{font-size:30px;letter-spacing:-1px;line-height:1.25}.start-page-heading p{font-size:12px;margin-top:12px}.start-page-heading>.button{margin-top:15px}.course-start-grid{grid-template-columns:1fr;gap:14px}.course-start-card{padding:23px;border-radius:22px}.course-start-card h2{font-size:23px}.course-start-card p{font-size:12px}.course-start-card small{margin-bottom:21px}.course-start-card>.button{min-height:48px}.course-bring{padding:23px;display:block;border-radius:22px}.course-bring .button-row{margin-top:20px;flex-wrap:wrap}.course-bring .button{min-height:45px}.start-simple-note{font-size:10px;line-height:1.9}
+ .studio-home{padding:0 0 15px}.home-greeting{gap:14px;margin:3px 0 24px}.home-greeting .eyebrow{font-size:9px;margin-bottom:12px}.home-greeting h1{font-size:30px;letter-spacing:-1.1px;line-height:1.25}.home-greeting p{font-size:12px;line-height:1.8}.home-avatar{width:41px;height:43px;border-radius:15px}.home-continue{padding:23px;border-radius:23px}.home-continue-top{gap:13px;margin-bottom:22px}.home-course-pill{font-size:10px}.home-continue-top .eyebrow{font-size:8px}.home-continue h2{font-size:24px;letter-spacing:-.65px;line-height:1.35}.home-course-progress{margin-top:22px}.home-continue-actions{gap:9px;margin-top:24px}.home-continue-actions>.button{width:100%;justify-content:space-between;min-height:48px;font-size:12px}.home-continue-actions>.button.ghost{justify-content:center;min-height:44px}.home-course-section{margin-top:26px}.home-section-heading{margin-bottom:11px}.home-section-heading h2{font-size:16px}.home-section-heading>.button{font-size:11px}.home-course-row{padding:16px;gap:13px;min-height:78px}.home-course-row .start-course-icon{width:39px;height:42px;border-radius:13px}.home-course-row strong{font-size:12px}.home-course-row small{font-size:10px}.home-shortcuts{gap:9px;margin-top:15px}.home-shortcuts>a{padding:16px 13px;gap:8px;font-size:11px;min-height:59px}.home-shortcuts>a>.icon:first-child{width:17px;height:17px}.home-day-summary{font-size:10px;margin-top:20px;gap:7px}.home-how{margin-top:19px}.home-how li{font-size:11px}.home-name-note{padding:9px 12px;font-size:11px}
+ body[data-page=dashboard] .topbar .toolbar{margin-left:auto}body[data-page=dashboard] .topbar .breadcrumb{max-width:none}
+}
+@media(max-width:380px){.welcome-screen{padding-inline:22px}.welcome-content h1{font-size:33px}.welcome-step{font-size:7px}.home-greeting h1{font-size:28px}.home-continue h2{font-size:22px}.home-shortcuts>a{padding-inline:11px}}
+
+.study-instruction {font-size:12px;color:var(--muted);line-height:1.8;margin:13px auto 0;max-width:440px;text-align:center}
+.work-extra-tools {max-width:720px;width:100%;margin:0 auto 23px;border:1px solid var(--ios-line);border-radius:15px;background:var(--ios-inset);padding:0 16px;text-align:left}
+.work-extra-tools>summary {min-height:46px;display:flex;align-items:center;justify-content:space-between;gap:15px;list-style:none;cursor:pointer;font-size:11px;color:var(--muted)}
+.work-extra-tools>summary>.icon {width:13px;height:13px}
+.work-extra-tools[open]>summary {border-bottom:1px solid var(--ios-line);margin-bottom:14px}
+.work-extra-tools .lx-topic-extras {margin-top:0}
+.work-progress-tools {margin:20px auto 0;max-width:450px}
+.work-progress-tools .journey-nav {margin-bottom:16px}
+@media(max-width:760px){.study-instruction{font-size:11px;max-width:290px;line-height:1.9}.work-extra-tools{margin-bottom:18px}.work-extra-tools>summary{font-size:11px;min-height:45px}.work-progress-tools{margin-top:17px}}
+/* Focused Study: one task, a short explanation, and Done. */
+.work-screen.focused-study{max-width:620px;margin:0 auto;padding:20px 0 36px;text-align:center}
+.focused-study .focus-course{margin:0 0 10px;color:var(--muted);font-size:13px;font-weight:600}
+.focus-position{color:var(--accent);font-size:12px;font-weight:650;letter-spacing:.08em;text-transform:uppercase}
+.work-screen.focused-study h1{font-size:clamp(26px,5vw,38px);margin:12px 0 8px;line-height:1.15}
+.focus-topic-label{color:var(--muted);font-size:14px;margin:0 0 22px}
+.focus-task{text-align:left;border:1px solid var(--border);border-radius:24px;background:var(--panel);overflow:hidden;margin:18px 0 4px}
+.focus-task>summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px;cursor:pointer}
+.focus-task>summary::-webkit-details-marker{display:none}
+.focus-task>summary>span{display:grid;gap:9px}
+.focus-task summary small{font-size:10px;letter-spacing:.13em;color:var(--accent)}
+.focus-task summary strong{font-size:22px;line-height:1.35;overflow-wrap:anywhere}
+.focus-task-hint{color:var(--muted);font-size:13px}
+.focus-task[open] summary .icon{transform:rotate(90deg)}
+.focus-task[open] .focus-task-hint{display:none}
+.focus-explanation{border-top:1px solid var(--border);padding:20px 24px 24px}
+.focus-explanation h2{font-size:14px;margin:0 0 10px;color:var(--accent)}
+.focus-explanation p{font-size:16px;line-height:1.75;white-space:pre-wrap;margin:0;overflow-wrap:anywhere}
+.focused-study .bubble-stage{height:280px;min-height:0;margin:0 auto}
+.focus-more{margin:18px auto 0;max-width:440px;text-align:center}
+.focus-more>summary{display:inline-flex;align-items:center;gap:6px;list-style:none;color:var(--muted);font-size:13px;cursor:pointer}
+.focus-more>div{padding-top:14px;display:flex;justify-content:center;flex-wrap:wrap;gap:10px}
+.focus-more .journey-nav{width:100%}
+.focus-progress{margin:20px 0 0;color:var(--muted);font-size:12px}
+.simple-course-builder .builder-editor textarea{min-height:180px}
+@media(max-width:600px){.work-screen.focused-study{padding-top:8px}.focus-task>summary{padding:20px}.focus-task summary strong{font-size:20px}.focus-explanation{padding:18px 20px}.focused-study .bubble-stage{height:250px}}
