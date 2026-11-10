@@ -1,0 +1,1507 @@
+{
+  "updated": "2026-11-05",
+  "scope": "Approved offline source additions are ready for phone testing. Source status and hardware/service verification are recorded separately; the complete 160-item catalogue is not finished.",
+  "sourceCheckpoint": "work/before-160-addons-20261103",
+  "features": [
+    {
+      "id": 1,
+      "area": "Home and quick capture",
+      "title": "Capture inbox",
+      "description": "Collect unsorted ideas and organize them later.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 2,
+      "area": "Home and quick capture",
+      "title": "Quick Add anywhere",
+      "description": "Open one sheet to create a note, reminder or study item.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 3,
+      "area": "Home and quick capture",
+      "title": "Home favourites",
+      "description": "Pin chosen notes, courses and reminders to Home.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 4,
+      "area": "Home and quick capture",
+      "title": "Rearrange Home",
+      "description": "Choose the order and visibility of Home cards.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 5,
+      "area": "Home and quick capture",
+      "title": "Choose the opening screen",
+      "description": "Start on Home, Study, Reminders or Notes.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 6,
+      "area": "Home and quick capture",
+      "title": "Morning briefing",
+      "description": "See a short overview of appointments, reminders and planned study.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 7,
+      "area": "Home and quick capture",
+      "title": "Evening wrap-up",
+      "description": "Review the day and choose what to carry forward.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 8,
+      "area": "Home and quick capture",
+      "title": "Recently opened",
+      "description": "Jump back to recently visited content across the app.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 9,
+      "area": "Home and quick capture",
+      "title": "Saved searches",
+      "description": "Keep useful filters such as unfinished work tagged Personal.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 10,
+      "area": "Home and quick capture",
+      "title": "Search personal reminders",
+      "description": "Include reminder titles, notes and completed items in global search.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 11,
+      "area": "Reminders",
+      "title": "Type dates naturally",
+      "description": "Enter 'Call Alex tomorrow at 6 pm' and preview the date.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 12,
+      "area": "Reminders",
+      "title": "Reminder snooze",
+      "description": "Delay a personal alert by minutes, hours or a chosen date.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 13,
+      "area": "Reminders",
+      "title": "Advanced repeat rules",
+      "description": "Repeat every N days, on weekdays or on the last Friday.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 14,
+      "area": "Reminders",
+      "title": "Repeat end conditions",
+      "description": "Stop after a date or a chosen number of occurrences.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 15,
+      "area": "Reminders",
+      "title": "Repeat after completion",
+      "description": "Schedule the next occurrence relative to when Done was actually tapped.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 16,
+      "area": "Reminders",
+      "title": "Separate deadline and alert",
+      "description": "Distinguish when something is due from when to notify.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 17,
+      "area": "Reminders",
+      "title": "Multiple alerts",
+      "description": "Choose an early warning and another alert near the due time.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "1–4 early alerts with separate alert date and snooze. Browser/model checks pass; new native scheduler compiles, physical alert timing awaits next APK."
+    },
+    {
+      "id": 18,
+      "area": "Reminders",
+      "title": "Reminder organization",
+      "description": "Add optional lists, colour labels and priorities.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 19,
+      "area": "Reminders",
+      "title": "Reminder attachments",
+      "description": "Attach a picture, document or useful link.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Local image/PDF/audio attachments and links; browser attachment open/export passed. Full backups retain files."
+    },
+    {
+      "id": 20,
+      "area": "Reminders",
+      "title": "Bulk reminder actions",
+      "description": "Move dates, change lists or archive selected reminders together.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 21,
+      "area": "Calendar and planning",
+      "title": "Week and agenda views",
+      "description": "Add a time-based week view and compact chronological agenda.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 22,
+      "area": "Calendar and planning",
+      "title": "Drag to reschedule",
+      "description": "Move an item onto another calendar day.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 23,
+      "area": "Calendar and planning",
+      "title": "Someday list",
+      "description": "Keep personal reminders without forcing a due date.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 24,
+      "area": "Calendar and planning",
+      "title": "Time blocks",
+      "description": "Give activities a duration and show overlapping plans.",
+      "status": "implemented",
+      "release": "1.3.0",
+      "notes": "Activities have durations and overlap indicators; manual blocks archive/restore."
+    },
+    {
+      "id": 25,
+      "area": "Calendar and planning",
+      "title": "Availability schedule",
+      "description": "Plan around available study windows and busy periods.",
+      "status": "implemented",
+      "release": "1.3.0",
+      "notes": "Weekly study windows are merged; busy blocks subtract capacity."
+    },
+    {
+      "id": 26,
+      "area": "Calendar and planning",
+      "title": "Plan toward an exam date",
+      "description": "Distribute remaining course work across available days.",
+      "status": "implemented",
+      "release": "1.3.0",
+      "notes": "Unfinished required task estimates are distributed through the inclusive deadline; shortfalls remain explicit."
+    },
+    {
+      "id": 27,
+      "area": "Calendar and planning",
+      "title": "Catch-up preview",
+      "description": "Suggest a revised schedule after missed days, with confirmation.",
+      "status": "implemented",
+      "release": "1.3.0",
+      "notes": "Reviewed catch-up replaces only upcoming generated blocks, archives old suggestions, keeps past blocks and actual progress; stale previews are rejected."
+    },
+    {
+      "id": 28,
+      "area": "Calendar and planning",
+      "title": "Calendar file exchange",
+      "description": "Import and export standard .ics calendar files.",
+      "status": "implemented",
+      "release": "1.4.0 phone-test",
+      "notes": "LW .ics reimport preserves all own repeat rules, anchor/count/workday and completion-relative metadata. Common standard RRULEs/time zones/alerts import/export. Third-party unsupported recurrence still requests individual events; external calendars see the current occurrence for unrepresentable dynamic/clamped schedules."
+    },
+    {
+      "id": 29,
+      "area": "Calendar and planning",
+      "title": "Time-zone choices",
+      "description": "Keep selected alerts in local time or a fixed time zone.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Local or IANA fixed time zone; DST overlap/gap model cases pass and native java.time scheduling matches the policy."
+    },
+    {
+      "id": 30,
+      "area": "Calendar and planning",
+      "title": "Working-day repeat rules",
+      "description": "Skip chosen holidays or non-working days for personal reminders.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Weekday and holiday filters on subsequent repeats; model checks preserve independent progress."
+    },
+    {
+      "id": 31,
+      "area": "The single-task Study experience",
+      "title": "Two-minute start",
+      "description": "Offer one tiny starting action when a lesson feels difficult.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 32,
+      "area": "The single-task Study experience",
+      "title": "Personal time estimates",
+      "description": "Suggest session lengths using previous actual study durations.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 33,
+      "area": "The single-task Study experience",
+      "title": "Session intention",
+      "description": "Choose what to understand before starting a session.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 34,
+      "area": "The single-task Study experience",
+      "title": "End-of-session reflection",
+      "description": "Save a short explanation of what became clear.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 35,
+      "area": "The single-task Study experience",
+      "title": "Need help flag",
+      "description": "Collect confusing tasks in a separate help queue.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 36,
+      "area": "The single-task Study experience",
+      "title": "Layered explanations",
+      "description": "Keep the short explanation first; reveal examples or hints on request.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 37,
+      "area": "The single-task Study experience",
+      "title": "Study beside a document",
+      "description": "Show the task and its PDF or notes together on larger screens.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 38,
+      "area": "The single-task Study experience",
+      "title": "Temporary lesson scratchpad",
+      "description": "Work out ideas without adding permanent course content.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 39,
+      "area": "The single-task Study experience",
+      "title": "Practise a completed task",
+      "description": "Repeat a task without resetting its original completion.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 40,
+      "area": "The single-task Study experience",
+      "title": "Rotate between courses",
+      "description": "Build an optional one-task queue from several selected courses.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 41,
+      "area": "Flashcards and deeper practice",
+      "title": "Flashcard decks",
+      "description": "Create dedicated question-and-answer cards from selected material.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 42,
+      "area": "Flashcards and deeper practice",
+      "title": "Fill-the-gap cards",
+      "description": "Hide selected words in sentences for recall.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 43,
+      "area": "Flashcards and deeper practice",
+      "title": "Image masking",
+      "description": "Cover labels on diagrams and reveal the answer.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Local image cards with 1–30 opaque covers, pointer drawing, precise percentage fields, answers/reveal and independent recall history. Original images remain unchanged. Browser create/draw/save/reveal passed; backups and invalid edits tested."
+    },
+    {
+      "id": 44,
+      "area": "Flashcards and deeper practice",
+      "title": "Adaptive card scheduling",
+      "description": "Adjust flashcard intervals from recall ratings.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 45,
+      "area": "Flashcards and deeper practice",
+      "title": "Progressive hints",
+      "description": "Reveal small hints before showing a full answer.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 46,
+      "area": "Flashcards and deeper practice",
+      "title": "Question banks",
+      "description": "Organize questions by subject, skill and difficulty.",
+      "status": "implemented",
+      "release": "1.3.0",
+      "notes": "Private question bank with subject, skill, difficulty and recoverable archive."
+    },
+    {
+      "id": 47,
+      "area": "Flashcards and deeper practice",
+      "title": "Timed mock exams",
+      "description": "Run a multi-question test with a timer and results.",
+      "status": "implemented",
+      "release": "1.3.0",
+      "notes": "Timed tests persist answers and their original deadline, resume on reload and finish on expiry checks."
+    },
+    {
+      "id": 48,
+      "area": "Flashcards and deeper practice",
+      "title": "Mixed-topic tests",
+      "description": "Practise several subjects together.",
+      "status": "implemented",
+      "release": "1.3.0",
+      "notes": "Randomized mixed-subject selections with filters and immutable question snapshots."
+    },
+    {
+      "id": 49,
+      "area": "Flashcards and deeper practice",
+      "title": "Mistake notebook",
+      "description": "Collect wrong answers, explanations and retry history.",
+      "status": "implemented",
+      "release": "1.3.0",
+      "notes": "Test and existing course-exercise mistakes show responses, expected answers, explanations, evidence links, recovery state and retry history. New course attempts retain a review snapshot; old attempts fall back to available course definitions."
+    },
+    {
+      "id": 50,
+      "area": "Flashcards and deeper practice",
+      "title": "Numerical answer checks",
+      "description": "Support units, acceptable ranges and rounding tolerance.",
+      "status": "implemented",
+      "release": "1.3.0",
+      "notes": "Numerical checks support inclusive ranges, absolute tolerance, scientific notation and exact case-sensitive units."
+    },
+    {
+      "id": 51,
+      "area": "Courses and easier .lw authoring",
+      "title": "Blank course recipes",
+      "description": "Start from a language, reading, skills or project structure.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 52,
+      "area": "Courses and easier .lw authoring",
+      "title": "Table-to-course import",
+      "description": "Turn pasted spreadsheet rows or CSV into editable topics.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 53,
+      "area": "Courses and easier .lw authoring",
+      "title": "Bulk media matching",
+      "description": "Attach several files and choose their lessons in one pass.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 54,
+      "area": "Courses and easier .lw authoring",
+      "title": "Reusable lesson templates",
+      "description": "Save a simple lesson structure and reuse it without JSON.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 55,
+      "area": "Courses and easier .lw authoring",
+      "title": "Lesson variants",
+      "description": "Offer beginner and advanced explanations within a topic.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 56,
+      "area": "Courses and easier .lw authoring",
+      "title": "Preview as a reader",
+      "description": "Test a course without changing personal progress.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 57,
+      "area": "Courses and easier .lw authoring",
+      "title": "Author revision history",
+      "description": "Compare and restore course drafts while protecting progress.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 58,
+      "area": "Courses and easier .lw authoring",
+      "title": "Optional learning branches",
+      "description": "Let people choose an alternative practice route.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 59,
+      "area": "Courses and easier .lw authoring",
+      "title": "Follow course updates",
+      "description": "Subscribe to a course URL and review available updates.",
+      "status": "planned",
+      "release": null,
+      "notes": "",
+      "delivery": "deferred-online-services"
+    },
+    {
+      "id": 60,
+      "area": "Courses and easier .lw authoring",
+      "title": "Publisher signatures",
+      "description": "Verify that an update came from the expected course publisher.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 61,
+      "area": "Notebook",
+      "title": "Reusable page templates",
+      "description": "Save layouts for journals, revision or meeting notes.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 62,
+      "area": "Notebook",
+      "title": "Pinned pages",
+      "description": "Keep important notebook pages at the top.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 63,
+      "area": "Notebook",
+      "title": "Smart note collections",
+      "description": "Group existing pages by tags, course or date automatically.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 64,
+      "area": "Notebook",
+      "title": "Page backlinks",
+      "description": "See which notes link to the current page.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 65,
+      "area": "Notebook",
+      "title": "Handwriting and stylus",
+      "description": "Write directly on a notebook canvas.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 66,
+      "area": "Notebook",
+      "title": "Table blocks",
+      "description": "Add editable rows and columns inside notes.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 67,
+      "area": "Notebook",
+      "title": "Equation blocks",
+      "description": "Write and display mathematical notation.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 68,
+      "area": "Notebook",
+      "title": "Connected idea boards",
+      "description": "Arrange note cards and connect them visually.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 69,
+      "area": "Notebook",
+      "title": "Visual note comparisons",
+      "description": "Compare revisions and restore a selected block.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 70,
+      "area": "Notebook",
+      "title": "Print-ready note export",
+      "description": "Export selected notebook pages as a well-formatted PDF.",
+      "status": "partial",
+      "release": "unreleased",
+      "notes": "A4 HTML export with tables/math/ink verified; Print/Save PDF source and native bridge exist. Actual PDF provider/device checks pending."
+    },
+    {
+      "id": 71,
+      "area": "Audio, images and documents",
+      "title": "Search scanned text",
+      "description": "Recognize text in photos and scanned PDFs.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Bundled English/Hindi Tesseract recognition of images and individual scanned PDF pages, editable reviewed text, global search and notebook conversion. Browser English/Hindi/PDF cases passed, including fresh Hindi recognition with the demo server stopped."
+    },
+    {
+      "id": 72,
+      "area": "Audio, images and documents",
+      "title": "Document scanner",
+      "description": "Photograph, crop and straighten a paper page.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Four-corner perspective crop, rotation and colour/grayscale/paper previews, preserving original and processed images. Browser imported image/PDF cases pass; Android camera intent with narrowly granted temporary JPEG provider compiles, physical camera check awaits APK."
+    },
+    {
+      "id": 73,
+      "area": "Audio, images and documents",
+      "title": "Audio timestamp links",
+      "description": "Attach a note to a particular moment in a recording.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Private, hash-bound recording notes with timestamp seek links. Browser loop/seek/reload/global search passed."
+    },
+    {
+      "id": 74,
+      "area": "Audio, images and documents",
+      "title": "Editable voice transcripts",
+      "description": "Turn a voice recording into searchable text.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Bundled local English/Hindi Vosk transcription of reviewed recordings/files up to three minutes; manual text for longer audio. Explicit microphone dictation is capped at 60 seconds. English file and saved-note recording→review→private transcript passed. Hindi synthetic phrase passed; no human Hindi accuracy claim. Real microphone/Android performance still needs device checks."
+    },
+    {
+      "id": 75,
+      "area": "Audio, images and documents",
+      "title": "Spoken reminder entry",
+      "description": "Dictate a reminder and review its details before saving.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Recognized words open an editable reminder preview with suggested date/time; save is explicit and alerts default off. Actual English WAV→review→tomorrow 18:00→save passed. Separate personal reminder; no Study completion."
+    },
+    {
+      "id": 76,
+      "area": "Audio, images and documents",
+      "title": "Video explanations",
+      "description": "Attach and play a local video within a lesson.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Inline MP4/WebM accepted in bulk matching and standard player markup; real video/codec testing still pending."
+    },
+    {
+      "id": 77,
+      "area": "Audio, images and documents",
+      "title": "Read aloud",
+      "description": "Speak written explanations and notebook pages.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Read aloud offers installed local voices only, bounded speed, chunking and immediate Stop. Browser play/stop and missing Hindi-voice fallback passed. Android TextToSpeech helper compiles; physical voice check awaits APK."
+    },
+    {
+      "id": 78,
+      "area": "Audio, images and documents",
+      "title": "Loop a short audio section",
+      "description": "Repeat a selected passage for listening or pronunciation practice.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Explicit play and loop range controls, no autoplay; stale play requests cannot restart stopped audio. Browser 0.1–0.4 second WAV loop and timestamp jump passed."
+    },
+    {
+      "id": 79,
+      "area": "Audio, images and documents",
+      "title": "Background audio controls",
+      "description": "Keep lesson audio controllable while the app is in the background.",
+      "status": "implemented",
+      "release": "1.4.0 phone-test",
+      "notes": "Android local foreground mediaPlayback service with MediaSession, focus/noisy-headphone handling, seek/loop/pause/stop and explicit background continuation. Native API playback checks pass; real headphones/Doze/codecs remain phone checks."
+    },
+    {
+      "id": 80,
+      "area": "Audio, images and documents",
+      "title": "Bilingual reading",
+      "description": "Show a translation beside selected source text.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Private copied source and user-written translation with language choices, side-by-side/wrapped phone reading, local read aloud and search. English/Hindi browser save/read passed. No hosted translation."
+    },
+    {
+      "id": 81,
+      "area": "Habits and focus",
+      "title": "Independent habit tracker",
+      "description": "Track personal habits separately from Study and reminders.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 82,
+      "area": "Habits and focus",
+      "title": "Flexible habit targets",
+      "description": "Aim for a count or several days per week.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 83,
+      "area": "Habits and focus",
+      "title": "Habit chains",
+      "description": "Suggest a chosen habit after another activity finishes.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 84,
+      "area": "Habits and focus",
+      "title": "Focus routine presets",
+      "description": "Save a warm-up, study and reflection sequence.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 85,
+      "area": "Habits and focus",
+      "title": "Interruption records",
+      "description": "Record distractions and review their pattern.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 86,
+      "area": "Habits and focus",
+      "title": "Distraction parking place",
+      "description": "Capture an unrelated thought without leaving the lesson.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 87,
+      "area": "Habits and focus",
+      "title": "Ambient sound mixer",
+      "description": "Combine optional rain, noise or other focus sounds.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 88,
+      "area": "Habits and focus",
+      "title": "Keep screen awake",
+      "description": "Prevent sleep only during a selected study activity.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Optional browser wake-lock and native keep-awake bridge. Platform behavior requires supported-device testing."
+    },
+    {
+      "id": 89,
+      "area": "Habits and focus",
+      "title": "Persistent focus countdown",
+      "description": "Show an active timer in an Android notification.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Opt-in Android system chronometer notification reads active focus goal, opens reflection and cancels when finished/disabled or active profile changes. No progress/time writes. API35 source compile passes; notification/Doze/device timing check awaits APK."
+    },
+    {
+      "id": 90,
+      "area": "Habits and focus",
+      "title": "Match study to available time",
+      "description": "Choose a five-, fifteen- or thirty-minute session.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 91,
+      "area": "Interface and personalization",
+      "title": "Choose navigation tabs",
+      "description": "Reorder or replace the main destinations.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 92,
+      "area": "Interface and personalization",
+      "title": "One-handed layout",
+      "description": "Bring important actions closer to the lower part of the screen.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 93,
+      "area": "Interface and personalization",
+      "title": "Named design presets",
+      "description": "Save several complete looks and switch between them.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 94,
+      "area": "Interface and personalization",
+      "title": "Scheduled appearance",
+      "description": "Change the visual theme at chosen times.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 95,
+      "area": "Interface and personalization",
+      "title": "Glass intensity controls",
+      "description": "Tune blur and translucency within the glass preset.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 96,
+      "area": "Interface and personalization",
+      "title": "Haptic customization",
+      "description": "Choose distinct feedback for completion, errors and navigation.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Pattern choices and native bridge exist; physical haptics await next APK/device."
+    },
+    {
+      "id": 97,
+      "area": "Interface and personalization",
+      "title": "Animation speed control",
+      "description": "Adjust transition timing beyond Off, Gentle and Full.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 98,
+      "area": "Interface and personalization",
+      "title": "Resizable workspace panes",
+      "description": "Drag the divider between content areas on a tablet or desktop.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 99,
+      "area": "Interface and personalization",
+      "title": "Custom-colour contrast check",
+      "description": "Check legibility before saving a personalized colour scheme.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 100,
+      "area": "Interface and personalization",
+      "title": "Branded launch screen",
+      "description": "Use the new LW identity during app launch without an extra wait.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 101,
+      "area": "Android integrations",
+      "title": "Adaptive LW launcher icon",
+      "description": "Provide standard and monochrome versions of the new logo.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 102,
+      "area": "Android integrations",
+      "title": "Long-press app shortcuts",
+      "description": "Open New reminder, Quick note or Study from the launcher.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 103,
+      "area": "Android integrations",
+      "title": "Notification Done and Snooze",
+      "description": "Act on a personal reminder without opening the app.",
+      "status": "implemented",
+      "release": "1.4.0 phone-test",
+      "notes": "Version/profile-bound notification Done/Snooze and guarded Undo. Native repeat rules match39 JS cases; real Snooze PendingIntent receiver tested. Changes merge around independent local drafts without Study writes."
+    },
+    {
+      "id": 104,
+      "area": "Android integrations",
+      "title": "Personal reminder widget",
+      "description": "Show today's personal reminders on the home screen.",
+      "status": "implemented",
+      "release": "1.4.0 phone-test",
+      "notes": "Separate native personal reminder widget with due/overdue rows, locked placeholders and adaptive two/three-row layout. Placement/launcher behavior remains a phone check."
+    },
+    {
+      "id": 105,
+      "area": "Android integrations",
+      "title": "Interactive widget actions",
+      "description": "Complete or postpone a widget reminder with recovery support.",
+      "status": "implemented",
+      "release": "1.4.0 phone-test",
+      "notes": "Widget Done/+1day and Undo use the same native transactions; stale edits, profile switches, app lock and changed repeat children are guarded."
+    },
+    {
+      "id": 106,
+      "area": "Android integrations",
+      "title": "Share to LW",
+      "description": "Receive selected text, links, pictures and PDFs from other apps.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Source includes bounded profile-owned Android ACTION_SEND intake for text, links, pictures, PDFs, recordings and .lw courses, with a reviewed keep step. Browser shared-thought→Inbox and picture→Notes passed. Native share-sheet/process-recreation checks await the next APK. Android15 component checks now pass for profile-owned text/file intake, opaque content-provider URI, stale-profile refusal and no automatic import. Real share-sheet/provider UX remains a phone check."
+    },
+    {
+      "id": 107,
+      "area": "Android integrations",
+      "title": "Open .lw files directly",
+      "description": "Offer LW when a compatible course file is opened.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Source includes content-URI .lw ACTION_VIEW intake into the normal signed-course preview/comparison. Signed course reached verified update preview; tampered signed course was blocked. Native file-manager resolution awaits APK/device; provider MIME/path matching can vary. Android15 query/receiver checks exposed and fixed uppercase/dotted/opaque URI association. Generic content MIME associations are validated again by displayed .lw filename and normal import preview; non-.lw direct opening is refused."
+    },
+    {
+      "id": 108,
+      "area": "Android integrations",
+      "title": "Quick Settings tile",
+      "description": "Open quick capture or a study session from Android's panel.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Android Quick Settings quick-note tile, unlock-and-open action and add-tile request on supported versions. Source compiles; phone-panel interaction awaits APK."
+    },
+    {
+      "id": 109,
+      "area": "Android integrations",
+      "title": "Device calendar connection",
+      "description": "Read chosen busy periods or add an LW event with permission.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Review a single reminder occurrence then open an editable device-calendar event via ACTION_INSERT. Due time/zone and all-day dates are tested. No calendar read/write permission or busy-period import. Native provider/save checks await APK."
+    },
+    {
+      "id": 110,
+      "area": "Android integrations",
+      "title": "Watch companion",
+      "description": "View the next task and act on reminders from a supported watch.",
+      "status": "implemented",
+      "release": "1.4.0 phone-test",
+      "notes": "Notification-based companion for compatible paired watches: next-task study alert and personal reminder actions, plus a phone-only mirroring control. No standalone watch APK or connection-status claim; actual paired watch remains a hardware check."
+    },
+    {
+      "id": 111,
+      "area": "Data, privacy, backups and sync",
+      "title": "Selective restore",
+      "description": "Recover chosen notes, courses or reminders from a full backup.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Selective notes/courses/reminders with explicit conflict choices, attachment-ID remapping and linked recurrence chains. Browser selected-note recovery passed."
+    },
+    {
+      "id": 112,
+      "area": "Data, privacy, backups and sync",
+      "title": "All-profile backup",
+      "description": "Export every profile in one clearly labelled package.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Two-profile browser archive exported and inspected: rich Demo profile plus an empty isolated profile. Read-only native archive bridge compiles; device check pending."
+    },
+    {
+      "id": 113,
+      "area": "Data, privacy, backups and sync",
+      "title": "Encrypted backup files",
+      "description": "Protect exported backups with a chosen password.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "AES-GCM/PBKDF2-310000 encrypted full backup; correct/wrong passwords and tampering covered. Browser export/unlock passed."
+    },
+    {
+      "id": 114,
+      "area": "Data, privacy, backups and sync",
+      "title": "Merge individual changes",
+      "description": "Synchronize separate records instead of choosing an entire workspace.",
+      "status": "partial",
+      "release": "unreleased",
+      "notes": "Offline per-record backup recovery exists. Configured-server record-level synchronization remains unimplemented."
+    },
+    {
+      "id": 115,
+      "area": "Data, privacy, backups and sync",
+      "title": "Paired-device management",
+      "description": "List connected devices and revoke an individual device.",
+      "status": "planned",
+      "release": null,
+      "notes": ""
+    },
+    {
+      "id": 116,
+      "area": "Data, privacy, backups and sync",
+      "title": "Clearer sync activity",
+      "description": "Show pending changes, conflicts and last successful exchange.",
+      "status": "planned",
+      "release": null,
+      "notes": ""
+    },
+    {
+      "id": 117,
+      "area": "Data, privacy, backups and sync",
+      "title": "Optional app lock",
+      "description": "Protect app access with a PIN or device biometrics.",
+      "status": "partial",
+      "release": "unreleased",
+      "notes": "Default-off native gate implemented with OS strong biometrics/device credential (Android 11+) and system screen-lock fallback on older supported versions. Opaque startup/resume gate, recent-view/screenshot hiding while enabled, authenticated enable/disable and stale/expired-callback checks. Pure Java session tests and API35 compile pass. Actual enable/cancel/unlock/background/process-recreation on a physical device is required before marking complete. Fresh Android15 install confirms default off and OS status. Enabled biometric/PIN lifecycle remains unverified on a real phone."
+    },
+    {
+      "id": 118,
+      "area": "Data, privacy, backups and sync",
+      "title": "Storage manager",
+      "description": "See attachment usage and recoverably clean unused files.",
+      "status": "implemented",
+      "release": "1.4.0 phone-test",
+      "notes": "Actual physical file cleanup after exporting and re-opening a SHA256-matching .lwfile recovery copy. Current references are rechecked, and individual recovery is available. Browser synthetic free/recover and native deletion boundary checks pass; original files were preserved."
+    },
+    {
+      "id": 119,
+      "area": "Data, privacy, backups and sync",
+      "title": "Data-upgrade preview",
+      "description": "Explain a storage migration and prepare a recovery point.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Backup format normalization/added sections shown before import; real restore creates a recovery point. No destructive migration."
+    },
+    {
+      "id": 120,
+      "area": "Data, privacy, backups and sync",
+      "title": "Backup rehearsal",
+      "description": "Restore into an isolated test workspace and check content opens.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Separate in-memory rehearsal opened saved courses and notes, including tables/math/ink. The live workspace is untouched except a rehearsal timestamp."
+    },
+    {
+      "id": 121,
+      "area": "Optional intelligent tools",
+      "title": "Explain more simply",
+      "description": "Generate an easier explanation of selected course text.",
+      "status": "planned",
+      "release": null,
+      "notes": "",
+      "delivery": "deferred-online-services"
+    },
+    {
+      "id": 122,
+      "area": "Optional intelligent tools",
+      "title": "Guided tutoring hints",
+      "description": "Ask helpful questions before revealing an answer.",
+      "status": "planned",
+      "release": null,
+      "notes": "",
+      "delivery": "deferred-online-services"
+    },
+    {
+      "id": 123,
+      "area": "Optional intelligent tools",
+      "title": "Draft practice material",
+      "description": "Suggest flashcards or questions for review before saving.",
+      "status": "planned",
+      "release": null,
+      "notes": "",
+      "delivery": "deferred-online-services"
+    },
+    {
+      "id": 124,
+      "area": "Optional intelligent tools",
+      "title": "Draft a course outline",
+      "description": "Turn a stated goal into an editable course proposal.",
+      "status": "planned",
+      "release": null,
+      "notes": "",
+      "delivery": "deferred-online-services"
+    },
+    {
+      "id": 125,
+      "area": "Optional intelligent tools",
+      "title": "Summarize long notes",
+      "description": "Produce a short draft summary without replacing the original.",
+      "status": "planned",
+      "release": null,
+      "notes": "",
+      "delivery": "deferred-online-services"
+    },
+    {
+      "id": 126,
+      "area": "Optional intelligent tools",
+      "title": "Suggest weak-topic practice",
+      "description": "Recommend practice using mistakes and recall history.",
+      "status": "planned",
+      "release": null,
+      "notes": "",
+      "delivery": "deferred-online-services"
+    },
+    {
+      "id": 127,
+      "area": "Optional intelligent tools",
+      "title": "Search by meaning",
+      "description": "Find relevant material even when the words differ.",
+      "status": "planned",
+      "release": null,
+      "notes": "",
+      "delivery": "deferred-online-services"
+    },
+    {
+      "id": 128,
+      "area": "Optional intelligent tools",
+      "title": "Source-linked generated answers",
+      "description": "Link explanations back to the selected course or notes.",
+      "status": "planned",
+      "release": null,
+      "notes": "",
+      "delivery": "deferred-online-services"
+    },
+    {
+      "id": 129,
+      "area": "Optional intelligent tools",
+      "title": "Explain a diagram",
+      "description": "Generate a draft walkthrough of a selected image.",
+      "status": "planned",
+      "release": null,
+      "notes": "",
+      "delivery": "deferred-online-services"
+    },
+    {
+      "id": 130,
+      "area": "Optional intelligent tools",
+      "title": "Detect content overlap",
+      "description": "Flag likely duplicate or conflicting lessons before import.",
+      "status": "planned",
+      "release": null,
+      "notes": "",
+      "delivery": "deferred-online-services"
+    },
+    {
+      "id": 131,
+      "area": "Sharing and collaboration",
+      "title": "Course preview links",
+      "description": "Share course content without exposing private progress.",
+      "status": "planned",
+      "release": null,
+      "notes": "",
+      "delivery": "deferred-online-services"
+    },
+    {
+      "id": 132,
+      "area": "Sharing and collaboration",
+      "title": "Nearby course transfer",
+      "description": "Send a course between nearby devices with confirmation.",
+      "status": "implemented",
+      "release": "1.4.0 phone-test",
+      "notes": "Reviewed signed .lw sharing through Android Bluetooth/Quick Share or other selected share providers. Read-only temporary course provider, filename/path/private-data boundaries and signature preview tested. Browser fallback saves a portable file. Two-device transfer remains a phone check."
+    },
+    {
+      "id": 133,
+      "area": "Sharing and collaboration",
+      "title": "Private study groups",
+      "description": "Create an invitation-only space around selected courses.",
+      "status": "planned",
+      "release": null,
+      "notes": "",
+      "delivery": "deferred-online-services"
+    },
+    {
+      "id": 134,
+      "area": "Sharing and collaboration",
+      "title": "Chosen accountability updates",
+      "description": "Share a manually approved progress summary.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 135,
+      "area": "Sharing and collaboration",
+      "title": "Teacher assignments",
+      "description": "Distribute a course or task to a chosen group.",
+      "status": "planned",
+      "release": null,
+      "notes": "",
+      "delivery": "deferred-online-services"
+    },
+    {
+      "id": 136,
+      "area": "Sharing and collaboration",
+      "title": "Review and feedback",
+      "description": "Submit work and receive comments from an invited reviewer.",
+      "status": "planned",
+      "release": null,
+      "notes": "",
+      "delivery": "deferred-online-services"
+    },
+    {
+      "id": 137,
+      "area": "Sharing and collaboration",
+      "title": "Collaborative notebooks",
+      "description": "Edit a shared notebook with authorship and conflict handling.",
+      "status": "planned",
+      "release": null,
+      "notes": "",
+      "delivery": "deferred-online-services"
+    },
+    {
+      "id": 138,
+      "area": "Sharing and collaboration",
+      "title": "Curated course library",
+      "description": "Browse reviewed courses by subject and level.",
+      "status": "planned",
+      "release": null,
+      "notes": "",
+      "delivery": "deferred-online-services"
+    },
+    {
+      "id": 139,
+      "area": "Sharing and collaboration",
+      "title": "Course author pages",
+      "description": "Show a publisher's courses, versions and update notes.",
+      "status": "planned",
+      "release": null,
+      "notes": "",
+      "delivery": "deferred-online-services"
+    },
+    {
+      "id": 140,
+      "area": "Sharing and collaboration",
+      "title": "Course issue reports",
+      "description": "Report unclear explanations or broken resources to an author.",
+      "status": "planned",
+      "release": null,
+      "notes": "",
+      "delivery": "deferred-online-services"
+    },
+    {
+      "id": 141,
+      "area": "Accessibility and release quality",
+      "title": "App language choices",
+      "description": "Provide Hindi, English and additional interface languages.",
+      "status": "implemented",
+      "release": "1.4.0 phone-test",
+      "notes": "Saved English/Hindi interface choice for navigation, common controls, settings and primary Study labels; original course/private content remains unchanged. Detailed messages have an explicit English fallback. Native reminder/widget action labels honor the choice."
+    },
+    {
+      "id": 142,
+      "area": "Accessibility and release quality",
+      "title": "Accessible authoring checks",
+      "description": "Flag missing image descriptions and inaccessible course structure.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Structural validation plus missing image-description and media-transcript suggestions; reader preview provided. Not an accessibility certification."
+    },
+    {
+      "id": 143,
+      "area": "Accessibility and release quality",
+      "title": "In-app tester feedback",
+      "description": "Send a reviewed feedback report with optional diagnostics.",
+      "status": "implemented",
+      "release": "1.2.0",
+      "notes": ""
+    },
+    {
+      "id": 144,
+      "area": "Accessibility and release quality",
+      "title": "Optional downloadable packs",
+      "description": "Download extra voices, models or visual assets only when wanted.",
+      "status": "planned",
+      "release": null,
+      "notes": ""
+    },
+    {
+      "id": 145,
+      "area": "Accessibility and release quality",
+      "title": "Large-library performance",
+      "description": "Index search and render long collections progressively.",
+      "status": "implemented",
+      "release": "1.4.0 phone-test",
+      "notes": "Private Unicode search index built in a local worker, stale-query/profile/edit guards,40-row result pages and progressive notebook sidebar.5,000-note browser test passed, including cold worker search with the QA server stopped. Sustained low-memory phone performance remains a device check."
+    },
+    {
+      "id": 146,
+      "area": "Accessibility and release quality",
+      "title": "Data health dashboard",
+      "description": "Find broken internal links, missing files and items needing recovery.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Page/course/file, reminder attachment and board-node health checks; source/model and browser zero-issue demo scan passed."
+    },
+    {
+      "id": 147,
+      "area": "Accessibility and release quality",
+      "title": "Custom keyboard shortcuts",
+      "description": "Assign common actions to preferred keys.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 148,
+      "area": "Accessibility and release quality",
+      "title": "Voice navigation",
+      "description": "Open app destinations or move through a task using explicit commands.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Explicit English/Hindi destination commands use an exact allowlist and a second review click. Actual “open notes” recording→preview→Open Notes passed; Done/completion commands are refused. No OS/cloud recognizer used."
+    },
+    {
+      "id": 149,
+      "area": "Accessibility and release quality",
+      "title": "Update centre",
+      "description": "Show the installed version, release notes and verified update availability.",
+      "status": "partial",
+      "release": "unreleased",
+      "notes": "Installed baseline and preview notes shown offline. Verified online update discovery/install is not implemented."
+    },
+    {
+      "id": 150,
+      "area": "Accessibility and release quality",
+      "title": "Interactive first-use tour",
+      "description": "Try features in a temporary demo without adding real course progress.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 151,
+      "area": "Worlds and personal rewards",
+      "title": "Optional world companion",
+      "description": "Add a small animated companion to a learning world.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 152,
+      "area": "Worlds and personal rewards",
+      "title": "Personal avatar",
+      "description": "Choose an avatar for the active profile.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 153,
+      "area": "Worlds and personal rewards",
+      "title": "Decorate a world",
+      "description": "Arrange earned scenery without changing study records.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 154,
+      "area": "Worlds and personal rewards",
+      "title": "Seasonal world collections",
+      "description": "Offer optional visual sets for different seasons.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 155,
+      "area": "Worlds and personal rewards",
+      "title": "Personal achievement rules",
+      "description": "Choose meaningful milestones based on real activity.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 156,
+      "area": "Worlds and personal rewards",
+      "title": "Course challenges",
+      "description": "Set optional challenges measured from actual study completions.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 157,
+      "area": "Worlds and personal rewards",
+      "title": "Memory capsules",
+      "description": "Attach a reflection to a milestone in the visual journey.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 158,
+      "area": "Worlds and personal rewards",
+      "title": "Progress share cards",
+      "description": "Create a picture showing only the progress details selected.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 159,
+      "area": "Worlds and personal rewards",
+      "title": "Completed-course gallery",
+      "description": "Browse past courses as a visual collection.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    },
+    {
+      "id": 160,
+      "area": "Worlds and personal rewards",
+      "title": "Personal reward menu",
+      "description": "Choose a real-life reward to claim after reaching a selected goal.",
+      "status": "implemented",
+      "release": "unreleased",
+      "notes": "Implemented in the unreleased offline demo source. Model tests cover persistence/progress isolation; see OFFLINE-DEMO-WORK.md for browser checks and device limitations."
+    }
+  ],
+  "scopeDecision": {
+    "onlineServices": "Deferred by user on 2026-11-03",
+    "active": "Continue offline additions"
+  },
+  "currentRelease": "1.3.0",
+  "checkpoints": {
+    "before": "work/before-160-addons-20261103",
+    "batch1": "work/after-addons-batch1-20261103",
+    "batch2": "work/after-addons-batch2-20261103",
+    "mediaScans": "work/after-media-scans-20261104",
+    "beforeIntakeConnection": "work/before-incoming-20261104",
+    "finalAuditBefore": "work/before-final-audit-20261104",
+    "finalAuditAfter": "work/after-final-audit-20261104",
+    "offlineFinishBefore": "work/before-offline-finish-20261105",
+    "offlineFinishAfter": "work/after-offline-finish-20261105"
+  },
+  "sourceRelease": "1.4.0 phone-test / studio46 / raw-v30; previous shared 1.3.0 preserved",
+  "summary": {
+    "implemented": 134,
+    "partial": 4,
+    "planned": 22
+  },
+  "latestAudit": {
+    "date": "2026-11-05",
+    "source": "studio46",
+    "tests": 322,
+    "applicationModules": 96,
+    "androidSources": 24,
+    "routes": 58,
+    "precachePaths": 411,
+    "nativeEmulator": "Android 17/API37, S22 profile, flexible and precise timing;39 JS/native recurrence cases",
+    "report": "docs/OFFLINE-COMPLETION-1.4.0.md",
+    "fullCatalogueComplete": false,
+    "readyForPhoneTest": true
+  },
+  "phoneTestRelease": {
+    "version": "1.4.0",
+    "versionCode": 7,
+    "apk": "outputs/releases/LW-Learning-Studio-1.4.0-Phone-Test.apk",
+    "sha256": "5580daa76bd70217b69076e48d5ddf738434b25b5e5c6b28feff6544a03081fa"
+  }
+}

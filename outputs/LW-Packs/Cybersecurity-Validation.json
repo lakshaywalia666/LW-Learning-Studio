@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-06",
+  "format": "LW v2",
+  "courseId": "lw-cybersecurity-full-path",
+  "sections": 100,
+  "lessonTopics": 500,
+  "sectionProjectTopics": 100,
+  "totalTopics": 600,
+  "tasks": 1600,
+  "requiredCheckboxItems": 0,
+  "projects": 100,
+  "recallPrompts": 500,
+  "selfAssessmentExercises": 600,
+  "resources": 83,
+  "tools": 31,
+  "labEnvironmentGuides": 8,
+  "glossaryTerms": 82,
+  "plannedHours": 2325,
+  "bytes": 3147707,
+  "sha256": "ccdc18e7c6c262eaac4f5964986cff7633b3e5e507e2ec12ebcfd2b8579519da",
+  "checks": {
+    "runtimeCourseValidator": "PASS",
+    "workspaceImportModel": "PASS",
+    "fullTaskProgression": "PASS: 1600 tasks",
+    "firstTaskUndo": "PASS",
+    "courseExportRoundtrip": "PASS",
+    "noSeededProgressOrMinutes": true,
+    "resourceAndToolReferences": "PASS"
+  },
+  "phoneImport": "Not performed. User will import manually; application import validators, model progression and curriculum roundtrip passed."
+}

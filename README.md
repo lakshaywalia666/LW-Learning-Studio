@@ -4,7 +4,7 @@
 
 **LW Learning Studio is an offline-first study workspace for Android and the browser.** Create a course, add the tasks you want to learn, and work through them one at a time. Your notes, reminders, and progress belong to your local profile. A fresh workspace starts with zero courses, tasks, and progress.
 
-This public snapshot includes the app source, bundled offline assets, automated tests, and setup guides.
+This public repository includes the app source, bundled offline assets, automated tests, setup guides, and an optional standalone curriculum.
 
 [Quick start](#quick-start) · [Study workflow](#study-workflow) · [Features](#features) · [Architecture](#architecture) · [Android build](#android-build)
 
@@ -50,7 +50,9 @@ flowchart TD
 | **Profiles and recovery** | Keep learners separate, export and restore workspace backups, and optionally pair devices through a configured encrypted sync server. |
 | **Android integrations** | Use native reminders, widgets, file sharing, background audio controls, and local media features where the device supports them. |
 
-[Study and profiles](docs/STUDY-PROFILES.md) · [Feature guide](docs/UPGRADES.md) · [Interface guide](docs/INTERFACE.md)
+[Study and profiles](docs/STUDY-PROFILES.md) · [Feature guide](docs/UPGRADES.md) · [Interface guide](docs/INTERFACE.md) · [Rollout tracker](docs/ADDON-ROLLOUT.md)
+
+The optional **Cybersecurity & Hacking** pack includes 500 lessons, 100 section projects, and 1,600 tasks. The pack is separate from the empty workspace that ships with the app. [Course pack and study guide](outputs/LW-Packs/README.md#cybersecurity--hacking)
 
 ## Architecture
 
@@ -73,9 +75,9 @@ flowchart LR
 | [`outputs/Cyberpath/public/`](outputs/Cyberpath/public/) | Shared web UI, state models, offline shell, workers, and bundled runtime assets |
 | [`outputs/Cyberpath/android/`](outputs/Cyberpath/android/) | Java wrapper, manifest, resources, and device integrations |
 | [`outputs/Cyberpath/tests/`](outputs/Cyberpath/tests/) | Model, storage, workflow, and native regression checks |
-| [`outputs/LW-Packs/`](outputs/LW-Packs/) | Reusable course schema, validator, and a theme example |
+| [`outputs/LW-Packs/`](outputs/LW-Packs/) | Course schema, validator, theme example, and the standalone cybersecurity curriculum |
 | [`tools/`](tools/) | Test runner, Android packaging and QA scripts, and optional sync server |
-| [`docs/`](docs/) | Feature guides, interface notes, and the screen inventory |
+| [`docs/`](docs/) | Feature guides, rollout history, screen inventory, and QA summaries |
 
 ## Tests
 
@@ -83,7 +85,7 @@ flowchart LR
 node tools/run_tests.mjs
 ```
 
-The source has **330 automated checks**. A fresh browser-only checkout runs 329 and skips the Java app-lock check until the JDK tool config is available. [Direct task entry verification](docs/SIMPLE-TASK-ENTRY.md#verification)
+The source has **330 automated checks**. A fresh browser-only checkout runs 329 and skips the Java app-lock check until the JDK tool config is available. [Direct task entry verification](docs/SIMPLE-TASK-ENTRY.md#verification) · [QA history](docs/QA.md)
 
 ## Android build
 
